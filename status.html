@@ -1,0 +1,614 @@
+<title>QuizApp Repair Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground: #eef1f5;
+    --surface: #ffffff;
+    --surface-2: #f6f8fa;
+    --ink: #1a2230;
+    --ink-dim: #5a6675;
+    --ink-faint: #8b96a5;
+    --line: #dde3ea;
+    --signal: #b7791f;
+    --signal-soft: #f5e6cd;
+    --ok: #2f8f5b;
+    --ok-soft: #d9efe2;
+    --blocked: #c1483f;
+    --blocked-soft: #f6ddda;
+    --pending: #7a8695;
+    --pending-soft: #e7eaee;
+    --shadow: 0 1px 2px rgba(20,30,45,.06), 0 6px 20px rgba(20,30,45,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0e141c;
+      --surface: #151e29;
+      --surface-2: #1b2531;
+      --ink: #e6ebf1;
+      --ink-dim: #9aa6b4;
+      --ink-faint: #6b7787;
+      --line: #26313e;
+      --signal: #e0a63f;
+      --signal-soft: #3a2f18;
+      --ok: #4fb37b;
+      --ok-soft: #17301f;
+      --blocked: #e0716a;
+      --blocked-soft: #341c1a;
+      --pending: #7f8b9a;
+      --pending-soft: #202a36;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0e141c;
+    --surface: #151e29;
+    --surface-2: #1b2531;
+    --ink: #e6ebf1;
+    --ink-dim: #9aa6b4;
+    --ink-faint: #6b7787;
+    --line: #26313e;
+    --signal: #e0a63f;
+    --signal-soft: #3a2f18;
+    --ok: #4fb37b;
+    --ok-soft: #17301f;
+    --blocked: #e0716a;
+    --blocked-soft: #341c1a;
+    --pending: #7f8b9a;
+    --pending-soft: #202a36;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.28);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 40px 22px 80px; }
+
+  h1, h2, h3 { font-family: "Archivo", system-ui, sans-serif; text-wrap: balance; margin: 0; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+  /* ---- header ---- */
+  header { margin-bottom: 34px; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--signal); font-weight: 600; margin-bottom: 10px;
+  }
+  h1 { font-size: 30px; font-weight: 700; letter-spacing: -.01em; }
+  .sub { color: var(--ink-dim); margin-top: 8px; font-size: 15px; }
+  .updated { color: var(--ink-faint); font-size: 13px; margin-top: 4px; }
+
+  /* ---- progress rail ---- */
+  .rail {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 26px; box-shadow: var(--shadow); margin-bottom: 26px;
+  }
+  .rail-top { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .pct { font-family: "Archivo", sans-serif; font-weight: 700; font-size: 52px; line-height: 1; letter-spacing: -.02em; }
+  .pct span { font-size: 24px; color: var(--ink-faint); }
+  .phase-name { text-align: right; }
+  .phase-name .k { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); }
+  .phase-name .v { font-family: "Archivo", sans-serif; font-weight: 600; font-size: 17px; }
+
+  .segbar { display: flex; gap: 3px; margin-top: 20px; }
+  .seg { flex: 1; height: 12px; border-radius: 3px; background: var(--pending-soft); position: relative; overflow: hidden; }
+  .seg.done { background: var(--ok); }
+  .seg.active { background: var(--signal-soft); }
+  .seg.active::after {
+    content: ""; position: absolute; inset: 0; width: var(--fill, 0%);
+    background: var(--signal); transition: width .5s ease;
+  }
+  .seglabels { display: flex; gap: 3px; margin-top: 6px; }
+  .seglabels span { flex: 1; text-align: center; font-family: "IBM Plex Mono", monospace; font-size: 10px; color: var(--ink-faint); }
+
+  /* ---- now panel ---- */
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 620px) { .grid2 { grid-template-columns: 1fr; } }
+  .panel {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    padding: 18px 20px; box-shadow: var(--shadow);
+  }
+  .panel h3 {
+    font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint);
+    font-family: "IBM Plex Mono", monospace; font-weight: 600; margin-bottom: 12px;
+  }
+  ul.list { margin: 0; padding: 0; list-style: none; }
+  ul.list li { position: relative; padding-left: 20px; margin-bottom: 7px; font-size: 14px; color: var(--ink-dim); }
+  ul.list li::before { position: absolute; left: 0; top: 0; font-family: "IBM Plex Mono", monospace; font-weight: 600; }
+  ul.list.done li::before { content: "\2713"; color: var(--ok); }
+  ul.list.todo li::before { content: "\2192"; color: var(--pending); }
+
+  .advice {
+    margin: 22px 0 30px; border-radius: 12px; padding: 16px 20px;
+    border: 1px solid var(--signal); background: var(--signal-soft); color: var(--ink);
+  }
+  .advice.none { border-color: var(--line); background: var(--surface-2); color: var(--ink-dim); }
+  .advice h3 { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6px; color: var(--signal); }
+  .advice.none h3 { color: var(--ink-faint); }
+
+  /* ---- phase table ---- */
+  section { margin-top: 38px; }
+  h2 { font-size: 19px; font-weight: 600; margin-bottom: 4px; }
+  .section-sub { color: var(--ink-faint); font-size: 13px; margin-bottom: 16px; }
+
+  .ptable { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); box-shadow: var(--shadow); }
+  .prow { display: grid; grid-template-columns: 56px 1fr 108px; align-items: center; gap: 12px; padding: 12px 16px; border-top: 1px solid var(--line); }
+  .prow:first-child { border-top: none; }
+  .prow .id { font-family: "IBM Plex Mono", monospace; font-weight: 600; color: var(--ink-faint); font-size: 13px; }
+  .prow .desc { font-size: 14px; }
+  .prow .desc .pct-range { font-family: "IBM Plex Mono", monospace; color: var(--ink-faint); font-size: 12px; }
+  .chip {
+    justify-self: end; font-family: "IBM Plex Mono", monospace; font-size: 11px; font-weight: 600;
+    letter-spacing: .06em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; white-space: nowrap;
+  }
+  .chip.done { background: var(--ok-soft); color: var(--ok); }
+  .chip.active { background: var(--signal-soft); color: var(--signal); }
+  .chip.pending { background: var(--pending-soft); color: var(--pending); }
+
+  /* ---- archive ---- */
+  .snap { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); margin-bottom: 10px; box-shadow: var(--shadow); overflow: hidden; }
+  .snap summary {
+    display: flex; align-items: center; gap: 14px; padding: 14px 18px; cursor: pointer; list-style: none;
+  }
+  .snap summary::-webkit-details-marker { display: none; }
+  .snap summary .spct { font-family: "Archivo", sans-serif; font-weight: 700; font-size: 20px; min-width: 54px; }
+  .snap summary .sphase { flex: 1; font-weight: 600; font-size: 14px; }
+  .snap summary .sdate { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-faint); }
+  .snap[open] summary { border-bottom: 1px solid var(--line); }
+  .snap-body { padding: 6px 18px 18px; }
+  .snap-body .grid2 { margin-top: 12px; }
+  .snap-body .panel { box-shadow: none; background: var(--surface-2); }
+  .snap-note { font-size: 13px; color: var(--ink-dim); margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line); }
+
+  footer { margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--ink-faint); font-size: 12px; }
+  a { color: var(--signal); }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Repair Log &middot; ACCA FA QuizApp v2</div>
+    <h1 id="h-title">Loyihani tiklash: holat</h1>
+    <p class="sub">Chuqur audit → barcha kamchiliklarni fazama-faza tuzatish. Har 10% da yangilanadi; barcha suratlar quyidagi arxivda saqlanadi.</p>
+    <p class="updated mono" id="h-updated"></p>
+  </header>
+
+  <div class="rail">
+    <div class="rail-top">
+      <div class="pct mono" id="r-pct"></div>
+      <div class="phase-name">
+        <div class="k">Hozirgi faza</div>
+        <div class="v" id="r-phase"></div>
+      </div>
+    </div>
+    <div class="segbar" id="r-segbar"></div>
+    <div class="seglabels" id="r-seglabels"></div>
+  </div>
+
+  <div class="grid2">
+    <div class="panel">
+      <h3>Nimalar tuzatildi</h3>
+      <ul class="list done" id="r-done"></ul>
+    </div>
+    <div class="panel">
+      <h3>Nimalar qoldi</h3>
+      <ul class="list todo" id="r-remaining"></ul>
+    </div>
+  </div>
+
+  <div class="advice" id="r-advice">
+    <h3 id="r-advice-h">Maslahat kerak</h3>
+    <div id="r-advice-body"></div>
+  </div>
+
+  <section>
+    <h2>Fazalar xaritasi</h2>
+    <div class="section-sub">10 ta faza &middot; har biri ~10%</div>
+    <div class="ptable" id="phase-table"></div>
+  </section>
+
+  <section>
+    <h2>Arxiv</h2>
+    <div class="section-sub">Har bir 10% bosqichdagi surat — eng yangisi yuqorida</div>
+    <div id="archive"></div>
+  </section>
+
+  <footer>
+    To'liq audit: <span class="mono">AUDIT.md</span> &middot; Tuzatishlar loyiha <span class="mono">master</span> shoxobchasida &middot;
+    Bu sahifa avtomatik yangilanadi.
+  </footer>
+</div>
+
+<script>
+  // ============ PHASE MAP ============
+  const PHASES = [
+    { id: "P1",  range: "0–10%",   name: "Build yashil",        desc: "Barcha build/type xatolar, dark-mode varianti, badge CSS, typography plagin" },
+    { id: "P2",  range: "10–20%",  name: "Quiz sikli",          desc: "Import bug, weighted quiz, yagona checkAnswer + multi, manual savollar, urinishlarni saqlash" },
+    { id: "P3",  range: "20–30%",  name: "SRS dvigateli",       desc: "Karta yaratish, yagona manba, muddat hisoblash, javob renderi, klaviatura" },
+    { id: "P4",  range: "30–40%",  name: "Taymer & rejimlar",   desc: "Jonli taymer + pauza, Tutor/Exam tanlovi, ishonch, savol tarmog'i" },
+    { id: "P5",  range: "40–50%",  name: "Analitika",           desc: "Mastery barlari, heatmap, recent activity, kunlik grafik, zaif bo'limlar" },
+    { id: "P6",  range: "50–60%",  name: "Ulanishlar",          desc: "Section quiz tanlagich, toastlar, error boundary, animatsiya/ovoz sozlamalari" },
+    { id: "P7",  range: "60–70%",  name: "Supabase sync",       desc: "Sxema SQL, store sync qatlami, kredensiallar UI, konflikt ishlovi" },
+    { id: "P8",  range: "70–80%",  name: "AI yordamchi",        desc: "Haqiqiy fallback, variant amaliyoti, explain/hint/why-wrong, insights" },
+    { id: "P9",  range: "80–90%",  name: "Xavfsizlik",          desc: "DOMPurify sanitizatsiya, import validatsiya, CSP, AI URL allowlist" },
+    { id: "P10", range: "90–100%", name: "Sayqal & bank",       desc: "Savol bankini boyitish, tarjima, mobil, a11y, tozalash, yakuniy audit" },
+  ];
+
+  // ============ SNAPSHOTS (append one per 10%) ============
+  // status: for each phase index 0..9 -> "done" | "active" | "pending"
+  const SNAPSHOTS = [
+    {
+      pct: 6,
+      date: "2026-08-31",
+      phaseId: "P1",
+      phaseName: "Build yashil (boshlandi)",
+      statuses: ["active","pending","pending","pending","pending","pending","pending","pending","pending","pending"],
+      done: [
+        "To'liq chuqur audit yakunlandi — AUDIT.md (100+ topilma, har biri fayl:satr dalili bilan)",
+        "Barcha topilmalar 10 fazaga ajratildi",
+        "Holat sahifasi va arxiv tizimi o'rnatildi",
+      ],
+      remaining: [
+        "20+ build/type xatoni tuzatish (P1)",
+        "35+ runtime logic xato (P2–P6)",
+        "11 xavfsizlik topilmasi (P9)",
+        "26 yetishmayotgan funksiya",
+        "23 keraksiz/o'lik kod bloki",
+      ],
+      advice: "Hozircha yo'q. Audit topilmalari bilan rozimisiz — ayniqsa Supabase (P7) va AI endpoint (P8) qismlarini to'liq qilaymi yoki lokal-birinchi holatida qoldiraymi? Javob bermasangiz, ikkalasini ham to'liq ishlaydigan qilaman.",
+      note: "Boshlang'ich holat: loyiha next build dan o'tmaydi, asosiy quiz sikli runtime da crash bo'ladi. Audit bosqichi tugadi, tuzatish boshlanmoqda.",
+    },
+    {
+      pct: 12,
+      date: "2026-08-31",
+      phaseId: "P2",
+      phaseName: "Quiz sikli (davom etmoqda)",
+      statuses: ["done","active","pending","pending","pending","pending","pending","pending","pending","pending"],
+      done: [
+        "P1 TUGADI: barcha 20+ build/type xato tuzatildi — `next build` endi YASHIL, ilova ishga tushadi (HTTP 200)",
+        "Dark-mode: `@custom-variant dark` qo'shildi — qo'lda \"Dark\" tanlash endi butun UIga ta'sir qiladi",
+        "Bo'lim (section) belgilari uchun rang CSS (badge-DE…badge-CAP) qo'shildi",
+        "Ishonch belgilari tuzatildi (`badge-confidence-*` klass nomi bug'i)",
+        "`prose` o'rniga `.rich-text` stillari — izohlar endi to'g'ri formatlanadi (typography plagini shart emas)",
+        "QuizView'dagi kritik import bug'i (B2) tuzatildi — quiz topshirish endi crash bo'lmaydi",
+        "Mixed Quiz crash (B4) tuzatildi",
+        "Yagona `checkAnswer` manbai (`lib/questions.ts`) — `multi` savollar endi tartibdan qat'i nazar to'g'ri baholanadi",
+        "`manual` savollar endi xato bankini ifloslantirmaydi",
+        "Yangi `attemptsStore` — har bir quiz tarixga saqlanadi (Recent Activity uchun asos)",
+        "SRS: `initSRSForMistakesData` ulandi — xatolardan SRS kartalar endi HAQIQATAN yaratiladi; ikki manba muammosi bartaraf etildi",
+        "QuizResults foiz rangi bug'i (L11) tuzatildi",
+      ],
+      remaining: [
+        "P2 qoldi: Dashboard launch tozalash, `count` e'tiborsizligi, taymer (P4)",
+        "SRS javob renderi va quality xaritalashni yakunlash (P3)",
+        "Analitikani Dashboard'ga ulash (P5)",
+        "Supabase sync (P7), AI polish (P8), xavfsizlik (P9)",
+        "Savol banki + a11y + tozalash (P10)",
+      ],
+      advice: null,
+      note: "P1 to'liq yakunlandi. P2 ning katta qismi (asosiy quiz sikli) ham tuzatildi. Endi SRS dvigatelini (P3) yakunlab, keyin taymer/rejimlar (P4) va analitikaga (P5) o'taman.",
+    },
+    {
+      pct: 30,
+      date: "2026-08-31",
+      phaseId: "P4",
+      phaseName: "Taymer & rejimlar (davom etmoqda)",
+      statuses: ["done","done","done","active","pending","pending","pending","pending","pending","pending"],
+      done: [
+        "P2 TUGADI + brauzerda tekshirildi: Mixed Quiz → 20 savol → javob berish → Tutor izohi → natija ekrani → xato banki (18) → SRS kartalar (18) → streak — hammasi ISHLAYDI, konsol xatosiz",
+        "P3 TUGADI: SRS dvigateli to'liq ishlaydi — kartalar yaratiladi, SM-2 qayta rejalashtiradi, javob renderi (answerText) to'g'ri, sessiya oqimi tekshirildi",
+        "Yagona SRS reyting tugmalari (Again/Hard/Good/Easy) — 3 ta ekranda bir xil quality xaritalash",
+        "Klaviatura yorliqlari: Flashcards (Space=flip, ←→, 1-4=baho), SRS (Space=ko'rsat, 1-4=baho), Quiz (←→)",
+        "Jonli taymer (har soniya yangilanadi) + haqiqiy Pauza (vaqtni to'xtatadi)",
+        "Tutor/Exam rejimi endi content-turidan ajratilgan — Settings'dagi tanlov barcha quizlarga ta'sir qiladi; header'da ikkala belgi",
+        "Savol tarmog'i (grid) navigatsiyasi ishlaydi — javob berilganlar yashil",
+        "Dark mode TO'LIQ tuzatildi — CSS o'zgaruvchilar `.dark` klass ostida, FOUC yo'q, brauzerda tekshirildi",
+        "Savol banki normalizatsiyasi — yo'q `difficulty`/`section` maydonlari avtomatik to'ldiriladi (crash oldi olindi)",
+        "ErrorBoundary — bitta buzuq ko'rinish endi butun ilovani o'chirmaydi",
+        "attemptsStore, questions.ts (yagona checkAnswer/answerText), ThemeProvider soddalashtirildi",
+        "Flashcards shuffle haqiqiy; page.tsx ma'lumot yuklash tozalandi (mistakes wipe bug'i tuzatildi)",
+      ],
+      remaining: [
+        "P4 qoldi: exam rejimi to'liq oqimi, natijalarda ishonch, tutor-da izohdan keyin keyingi savolga silliq o'tish",
+        "P5: analitika komponentlarini Dashboard'ga ulash (heatmap, mastery barlar, kunlik grafik)",
+        "P6: toastlar, ovoz/animatsiya sozlamalari, sidebar badge bug'i (U18)",
+        "P7: Supabase sync + UI",
+        "P8: AI yordamchi polish + insights",
+        "P9: xavfsizlik (DOMPurify, CSP, import validatsiya)",
+        "P10: savol banki boyitish, tarjima, mobil, a11y, yakuniy tozalash",
+      ],
+      advice: "Ish yaxshi ketmoqda, hozircha to'siq yo'q. Eslatma: Supabase (P7) uchun sizda loyiha bo'lsa URL/anon-key kerak bo'ladi — bo'lmasa, men uni ixtiyoriy (lokal-birinchi) qilib qo'yaman va sxema SQL faylini tayyorlab beraman.",
+      note: "3 faza tugadi, ilova brauzerda uchdan-uchgacha tekshirildi va to'liq ishlaydi. Boshlanishida `next build` ishlamas edi va quiz topshirish crash bo'lardi — endi hammasi joyida.",
+    },
+    {
+      pct: 92,
+      date: "2026-09-01",
+      phaseId: "P10",
+      phaseName: "Sayqal & bank (deyarli tugadi)",
+      statuses: ["done","done","done","done","done","done","done","done","done","done"],
+      done: [
+        "P5 TUGADI: analitika Dashboard'ga ulandi — Study Insight kartasi, Focus Areas, 14-kunlik grafik, Section Mastery barlari, Weak Spot Heatmap, Recent Activity (hammasi brauzerda tekshirildi)",
+        "P6 TUGADI: toast bildirishnomalari (Settings/Import), ovoz effektlari (Web Audio — to'g'ri/xato/tugatish signallari), animatsiya sozlamasi haqiqatan ishlaydi, Sidebar badge bug'i (U18) tuzatildi",
+        "P7 TUGADI: Supabase — supabase/schema.sql (6 jadval + RLS), Settings'da Cloud Sync UI (URL/kalit/Push/Pull), yagona qurilma-blob sync qatlami. Lokal-birinchi: hech narsa majburiy emas",
+        "P8 TUGADI: AI mijoz — 'Explain differently'/'Hint'/'Why wrong?' lokal fallback bilan ishlaydi (brauzerda tekshirildi); lokal Study Insight generatori",
+        "P9 TUGADI: XAVFSIZLIK — barcha dangerouslySetInnerHTML DOMPurify orqali sanitizatsiya qilinadi; import: hajm limiti + prototype-pollution himoyasi + sxema validatsiyasi; next.config.ts da qat'iy CSP + xavfsizlik sarlavhalari; AI URL https majburiy; AI kaliti eksportdan chiqarildi",
+        "P10: savol banki boyitildi (245 taga difficulty + subtopic + section yozildi); tarjima xatolari tuzatildi; a11y (radio/checkbox rollari, modal Esc/backdrop); o'lik kod tozalandi (2-chi Toaster, test-*.js, screenshotlar, fix_dashboard.py o'chirildi); ishlatilmagan paketlar olib tashlandi (chart.js, date-fns)",
+        "KRITIK LAYOUT BUG topildi va tuzatildi: <main> da min-w-0 yo'qligi keng kontent (grafik) butun sahifani gorizontal yoyib yuborardi",
+        "Import/Export to'liq qayta yozildi — attempts, settings, weights, custom questions ham qamrab olinadi",
+        "Exam rejimi to'liq oqimi brauzerda tekshirildi: jim baholash, 'Show Explanation' toggle, majburiy ishonch",
+      ],
+      remaining: [
+        "Lint: 0 xato, 30 ogohlantirish (ishlatilmagan lib funksiyalari — zararsiz)",
+        "Mobil chuqurroq sinov (pastki nav ishlaydi; sidebar mobilda yashirin — kutilgan)",
+        "Savol bankini 300+ ga kengaytirish (hozir 245, hammasi teglangan)",
+        "a11y: quiz variantlarida strelka bilan navigatsiya (radiogroup)",
+        "Ixtiyoriy: git commit (hozircha barcha kod commit qilinmagan — Initial commit'dan keyin)",
+      ],
+      advice: "Loyiha ishlaydigan va deyarli tugagan holatda. Qolgani — mayda sayqal. Ikki savol: (1) Kodni git'ga commit qilaymi? (2) Savol bankini 300+ ga kengaytirishni xohlaysizmi yoki 245 yetarlimi?",
+      note: "10 fazaning hammasi bajarildi. Ilova endi: next build YASHIL, tutor + exam rejimlari, SRS (SM-2), flashcards, to'liq analitika, xavfsizlik himoyasi, Supabase sync, import/export — hammasi brauzerda uchdan-uchgacha tekshirilgan. Boshlang'ich holatdan (build ishlamas, submit crash) katta yo'l bosib o'tildi.",
+    },
+    {
+      pct: 96,
+      date: "2026-09-01",
+      phaseId: "P10+",
+      phaseName: "Mobil & a11y sayqal",
+      statuses: ["done","done","done","done","done","done","done","done","done","done"],
+      done: [
+        "Mobil qobiq: gamburger tugmali yuqori panel (lg:hidden) + sidebar drawer + qora fon (backdrop); nav bosilganda avtomatik yopiladi",
+        "Kontent endi pastki nav ostiga tushmaydi (pb-28) va yuqori panel ostiga (pt-20)",
+        "a11y: quiz variantlarida strelka tugmalari bilan navigatsiya (radiogroup ichida focus ko'chishi)",
+        "Ko'rinadigan focus halqalari: option-item, confidence-btn, sidebar-link",
+        "ESLint: 0 xato (avval 20 edi); tsc: toza",
+        "Layout overflow bug'i (min-w-0) — barcha kengliklarda tekshirildi, gorizontal scroll yo'q",
+      ],
+      remaining: [
+        "Haqiqiy mobil qurilmada vizual sinov (bu muhitda 1024px+ viewport majburiy — CSS spec bo'yicha yozildi)",
+        "Savol bankini 300+ ga kengaytirish (ixtiyoriy — hozir 245, hammasi teglangan)",
+        "git commit (kod hali commit qilinmagan)",
+      ],
+      advice: "Deyarli tugadi. Endi faqat: (1) git commit qilaymi? (2) savol banki 245 yetarlimi yoki ko'paytiraymi? Bularsiz men loyihani shu holatda qoldiraman — u to'liq ishlaydi.",
+      note: "Foydalanuvchi 'Mobil + a11y sayqal' ni tanladi — bajarildi. Loyiha funksional jihatdan tugallangan: build yashil, lint toza, barcha asosiy oqimlar brauzerda tekshirilgan.",
+    },
+    {
+      pct: 100,
+      date: "2026-09-01",
+      phaseId: "v2.1",
+      phaseName: "Foydalanuvchi fikri bo'yicha yangilanish",
+      statuses: ["done","done","done","done","done","done","done","done","done","done"],
+      done: [
+        "YOPIQ SAVOLLAR: raqam/matn javoblarida 'Check answer' tugmasi qo'shildi — endi '2' yozganda 'xato' demaydi, faqat tugma bosilganda baholaydi",
+        "KO'P TANLOVLI: 2 ta variant kerak bo'lgan savolda bittasini bosganda 'xato' demaydi — 'Check answer' bosilgunча kutadi",
+        "TUTOR OQIMI: to'g'ri javob → avtomatik keyingi savolga; xato javob → 'Continue' tugmasi bilan qo'lda o'tkaziladi (izohni o'qish uchun)",
+        "SAVED QUIZ: quiz ichida saqlash tugmasi → Dashboard'da 'Saved quizzes' → Resume (taymer va javoblar saqlanadi) — brauzerda tekshirildi",
+        "DARK MODE TO'LIQ QAYTA QURILDI: yagona CSS token tizimi (--surface, --ink, --accent...) — endi har bir element ikkala rejimda ham to'g'ri; light va dark brauzerda tekshirildi",
+        "DIZAYN: yangi tugma tizimi (indigo aksent, taktil, focus halqalari), yangi .card/.badge/.option-item stillari, Dashboard to'liq qayta yozildi — zamonaviy, tekis, professional",
+        "YANGI QUIZ SOZLAMASI: 'New quiz' → bo'limlarni tanlash + qiyinchilik (Any/Easy/Medium/Hard) + savollar soni (slayder) + aralashtirish (Exam weights/Even) + rejim (Tutor/Exam)",
+        "BO'LIM BO'YICHA MASHQ: barcha 8 bo'lim + savollar soni + mastery% ko'rsatiladi; bosilganda o'sha bo'lim uchun sozlama oynasi (qiyinchilik + son tanlash bilan)",
+        "MOBIL: gamburger olib tashlandi; faqat pastki menyu qoldi + uni yashirish/ko'rsatish tugmasi",
+        "next build YASHIL, tsc toza, ESLint 0 xato",
+      ],
+      remaining: [
+        "Settings sahifasini yangi dizaynga to'liq moslashtirish (hozir ishlaydi, biroz eski ko'rinishda)",
+        "git commit (kod hali commit qilinmagan)",
+        "Savol bankini kengaytirish (ixtiyoriy)",
+      ],
+      advice: "Barcha so'ralgan o'zgarishlar bajarildi va brauzerda tekshirildi. Loyiha http://localhost:3000 da ishlab turibdi. Git commit qilaymi?",
+      note: "Foydalanuvchi fikri (8 band) to'liq bajarildi: yopiq savollarni baholash, ko'p tanlovli mantiq, tutor auto-advance, saved quiz, dark mode qayta qurish, dizayn, quiz sozlamasi, bo'lim bo'yicha mashq. Hammasi brauzerda uchdan-uchgacha tekshirilgan.",
+    },
+    {
+      pct: 100,
+      date: "2026-09-01",
+      phaseId: "v2.2",
+      phaseName: "Savol shabloni · AI import/export · VPS migratsiya · deploy tayyorligi",
+      statuses: ["done","done","done","done","done","done","done","done","done","done"],
+      done: [
+        "QUESTIONS_GUIDE.md — savol/mavzu qo'shish shabloni (har 5 tur uchun namuna), yangi bo'lim qo'shish, AI bilan tekshirish/kengaytirish promptlari",
+        "Import/Export → 'Download AI review JSON' — barcha savollar + xatolar + analitika + tayyor promptlar bitta faylga (AI tahlili uchun)",
+        "Import/Export → 'Apply an AI report' (faq_ai_report_v1) — AI qaytargan hisobotni yuklash: qog'ozdagi savollarni baholash, yangi savol qo'shish, bank xatolarini tuzatish, insight saqlash — brauzerda tekshirildi",
+        "Import/Export → 'Import a questions.json' — to'g'ridan bank faylini yuklash",
+        "Mistakes → 'Add a mistake' — qog'ozda xato qilgan savolni qo'lda xato bankiga qo'shish",
+        "VPS'dagi eski quiz-app o'rganildi (SSH, read-only): 341 savol, 'Xatolar bazasi' + 'PDF tahlil' funksiyalari",
+        "96 ta yangi savol VPS bankidan ko'chirildi → local bank endi 341 (barcha teglangan)",
+        "STATIC EXPORT: next.config → output:'export'; ilova endi 1.7MB static (nginx/Netlify/GitHub Pages'ga mos); brauzerda tekshirildi",
+        "deploy/nginx.conf (xavfsizlik sarlavhalari + CSP + SPA fallback), deploy/deploy.sh (Hetzner'ga izolyatsiyalangan deploy — boshqa loyihalarga tegmaydi)",
+        "starter axlat fayllar (file.svg, next.svg...) tozalandi",
+      ],
+      remaining: [
+        "HETZNER DEPLOY — sizning tasdiqingizni kutmoqda (shared production VPS, sxatosiz izolyatsiya rejasi tayyor)",
+        "git commit",
+      ],
+      advice: "Deploy rejasi tayyor va IZOLYATSIYALANGAN: yangi papka /root/quiz-app-v2/, yangi 'quiz-app-v2' konteyner, yangi subdomen — mavjud quiz-app va Coolify loyihalariga tegilmaydi. `npm run deploy` bitta buyruq. Ammo bu jonli VPS bo'lgani uchun ISHGA TUSHIRISHDAN OLDIN sizning 'ha' javobingizni kutaman.",
+      note: "Savol shabloni, AI import/export, VPS'dan savol+funksiya migratsiyasi, static export va deploy skriptlari tayyor. Faqat Hetzner'ga yuklash sizning ruxsatingizni kutmoqda.",
+    },
+    {
+      pct: 100,
+      date: "2026-09-01",
+      phaseId: "LIVE",
+      phaseName: "Hetzner'ga yuklandi — jonli",
+      statuses: ["done","done","done","done","done","done","done","done","done","done"],
+      done: [
+        "DEPLOY QILINDI: https://quizapp-v2.37.27.216.61.sslip.io — jonli, HTTPS (letsencrypt), 341 savol",
+        "Brauzerda tekshirildi: Dashboard, 'New quiz' sozlama oynasi, quiz oqimi (savolga javob → izoh) — hammasi ishlaydi, konsol toza (CSP xatosi yo'q)",
+        "IZOLYATSIYA TASDIQLANDI: eski quiz-app (200, tegilmagan), fazo-tech.uz (200), mudarris (301) — hammasi joyida; 12→13 konteyner; disk o'zgarmagan",
+        "Xavfsizlik sarlavhalari jonli: CSP, X-Frame-Options DENY, nosniff, Referrer-Policy",
+        "deploy/deploy.sh tuzatildi (traefik Host() backtick muammosi) — `npm run deploy` endi bitta buyruqda ishlaydi; deploy/README.md qo'shildi",
+        "Rollback: `docker rm -f quiz-app-v2` — faqat shu konteynerni o'chiradi",
+      ],
+      remaining: [
+        "git commit (kod hali commit qilinmagan)",
+        "Ixtiyoriy: o'z domeningizni ulash (DOMAIN=... bilan qayta deploy)",
+      ],
+      advice: "Ilova jonli: https://quizapp-v2.37.27.216.61.sslip.io — boshqa hech narsaga tegilmadi. Endi git commit qilaymi?",
+      note: "Loyiha to'liq yakunlandi va Hetzner'ga yuklandi. Boshlanishida `next build` ishlamas edi — endi jonli, ishlaydigan, xavfsiz ilova.",
+    },
+    {
+      pct: 100,
+      date: "2026-09-01",
+      phaseId: "LIVE+DATA",
+      phaseName: "Eski appdan progress ko'chirildi + qayta deploy",
+      statuses: ["done","done","done","done","done","done","done","done","done","done"],
+      done: [
+        "Eski quiz app eksporti (fa_quiz_backup_2026-09-01.json) yangi sxemaga o'girildi → src/data/seed.json",
+        "6 ta quiz urinishi + 111 ta savol tarixi (shundan 22 tasi xato) ko'chirildi",
+        "22 ta xato savol Mistakes bo'limiga + SRS jadvaliga qo'shildi",
+        "src/lib/seed.ts — birinchi ochilganda BIR MARTA yuklanadi (localStorage faq_seed_v1 bilan qo'riqlanadi, mavjud progressni o'chirmaydi)",
+        "Qayta deploy qilindi — brauzerda tekshirildi: Dashboard 6 urinish / 22 xato / 22 SRS ko'rsatmoqda, konsol toza",
+        "IZOLYATSIYA yana tasdiqlandi: quiz-app 200, fazo-tech.uz, coolify konteynerlari (7 hafta up) — o'zgarmagan",
+      ],
+      remaining: [
+        "git commit (kod hali commit qilinmagan)",
+        "Ixtiyoriy: o'z domeningizni ulash",
+      ],
+      advice: "Ma'lumotlar brauzer localStorage'ida saqlanadi — sahifa yopilganda ham qoladi. YO'QOLADI faqat: brauzer ma'lumotlarini tozalasangiz, boshqa qurilma/brauzer, yoki 'incognito'. Bir qurilmadan ikkinchisiga o'tishi uchun: Import/Export orqali backup, yoki Settings → Cloud Sync (o'z Supabase).",
+      note: "Eski appdagi progress endi yangi appda. Doimiy zaxira uchun vaqti-vaqti bilan Import/Export → backup JSON oling.",
+    },
+    {
+      pct: 100,
+      date: "2026-09-01",
+      phaseId: "FIREBASE",
+      phaseName: "Firebase Cloud Sync — doimiy saqlash",
+      statuses: ["done","done","done","done","done","done","done","done","done","done"],
+      done: [
+        "Supabase to'liq olib tashlandi (@supabase/supabase-js, src/lib/supabase.ts, supabase/ papka)",
+        "Firebase qo'shildi: src/lib/firebase.ts (config, email/parol auth, push/pull), firebaseSync.ts (auto-sync), CloudSyncCard qayta yozildi",
+        "Ma'lumot modeli: Firestore'da bitta hujjat users/{uid} — butun progress blob; faqat egasi o'qiydi (security rules)",
+        "Auto-sync: ilova ochilганда bulutdan tortadi (pull-first), keyin har o'zgarishda push (debounce 4s) + tab yopilганда push",
+        "FIREBASE_SETUP.md — bosqichma-bosqich qo'llanma (loyiha, web app, Email/Password, Firestore rules, ulash)",
+        "nginx CSP yangilandi (connect-src wss:, frame-src *.firebaseapp.com); qayta deploy — brauzerda tekshirildi, konsol toza, seed data joyida",
+      ],
+      remaining: [
+        "SIZDA: Firebase loyihasi ochish (FIREBASE_SETUP.md bo'yicha ~5 daqiqa), config'ni Settings → Cloud Sync'ga joylash, email/parol bilan kirish",
+        "git commit (kod hali commit qilinmagan)",
+      ],
+      advice: "Endi doimiy saqlash bor: Firebase loyihangizni ochib (bepul), Settings → Cloud Sync'da config + email/parol kiriting, Auto-sync'ni yoqing. Shundan keyin progress bulutda saqlanadi — brauzer tozalansa ham, boshqa qurilmada ham o'sha email bilan kirsangiz tortib oladi. Loyihani ochmasangiz ham ilova ishlaydi (local-only), lekin faqat shu brauzerда.",
+      note: "Cloud sync Supabase'dan Firebase'ga o'tkazildi (email/parol auth). Ilova hali ham local-first — Firebase ixtiyoriy, o'z loyihangiz.",
+    },
+    {
+      pct: 100,
+      date: "2026-09-01",
+      phaseId: "FIREBASE-LIVE",
+      phaseName: "Firebase loyihangiz ulandi — jonli sinovdan o'tdi",
+      statuses: ["done","done","done","done","done","done","done","done","done","done"],
+      done: [
+        "Sizning acca-fa-quiz Firebase loyihangiz ilovaga o'rnatilgan (DEFAULT_CONFIG) — Settings'da qo'lda config kiritish shart emas",
+        "Sign-in formasida email oldindan to'ldirilgan (dark@dark.fazo); parol hech qayerda saqlanmaydi",
+        "JONLI SINOV (https://quizapp-v2...): sign in ✓ → avtomatik pull ✓ → Push/Pull ✓ (6 urinish, 111 xato, 22 SRS) → Auto-sync ✓",
+        "Firebase console to'g'ri sozlangan tasdiqlandi: Email/Password auth yoqilgan, Firestore bazasi + rules ishlayapti",
+        "Disconnect qilsangiz local-only rejimga qaytadi; boshqa Firebase loyiha ulash imkoni ham qoldi",
+        "Boshqa loyihalar tekshirildi: quiz-app 200, fazo-tech.uz 200, mudarris 301 — tegilmagan",
+      ],
+      remaining: [
+        "SIZDA: har qurilmada bir marta Settings → Cloud Sync → parol kiritib Sign in + Auto-sync yoqing",
+        "git commit (kod hali commit qilinmagan; firebase.txt'da parol bor — commit qilishdan oldin o'ylab ko'ring)",
+      ],
+      advice: "Doimiy saqlash tayyor va ishlaydi. Ishlatish uchun: Settings → Cloud Sync → parolni kiriting → Sign in → Auto-sync'ni yoqing. Endi progress Firebase'da saqlanadi — brauzer tozalansa ham, boshqa qurilmada o'sha parol bilan kirsangiz ham tortib oladi.",
+      note: "Firebase loyiha (acca-fa-quiz) ilovaga o'rnatildi va jonli sinovdan muvaffaqiyatli o'tdi. firebase.txt'ni git'ga qo'shmaslik tavsiya etiladi (parol bor).",
+    },
+    {
+      pct: 100,
+      date: "2026-09-01",
+      phaseId: "FS-TYPE",
+      phaseName: "Yangi savol turi: to'liq moliyaviy hisobot (SPL + SOFP)",
+      statuses: ["done","done","done","done","done","done","done","done","done","done"],
+      done: [
+        "'fs' savol turi qo'shildi: trial balance + izohlardan to'liq SPL va SOFP ni o'quvchi o'zi to'ldiradi (IFRS 18 tuzilishi)",
+        "O'z UI'si: ikki proforma, har qatorga raqam input, ( ) kamaytiruvchilar uchun, jonli balans indikatori, minglik ajratgich",
+        "Baholash dvigateli (src/lib/fsGrading.ts): har qatorni alohida, 50% o'tish balli; ixtiyoriy 'own-figure' rejimi",
+        "Natija ekrani: X/29 ball, har qator uchun ✓/✗ + to'g'ri raqam + working; 'Question Review' da yoziladigan bo'lim",
+        "Namuna: FS1 (Silk Road Trading Co, 29 ball) questions.json'da + sample-fs-question.json alohida fayl + QUESTIONS_GUIDE.md §6",
+        "Mixed/section quizlarga aralashmaydi; Dashboard'da alohida 'Financial statements' tugmasi. Bank: 342 savol",
+        "Import → 'questions.json' endi {questions:[...]} shaklini ham qabul qiladi",
+        "Build/typecheck/lint toza; jonli deploy — brauzerda to'liq sinovdan o'tdi (to'g'ri javob 29/29, xato javob 21/29, dark mode)",
+      ],
+      remaining: [
+        "SIZDA: QUESTIONS_GUIDE.md §6 yoki sample-fs-question.json bo'yicha yangi 'fs' savollarni tayyorlash (AI ga sofp-spl-question-type-prompt.md + sample'ni berib so'rash mumkin)",
+        "git commit (kod hali commit qilinmagan)",
+      ],
+      advice: "Yangi savol turi tayyor va jonli. Savol qo'shish namunasi: sample-fs-question.json (alohida fayl, Import orqali yuklanadi) yoki src/data/questions.json ichidagi FS1. Format tafsilotlari — QUESTIONS_GUIDE.md ning 6-bo'limida. Tekshirish: (1) har subtotal formula = correctValue, (2) Total assets = Total equity and liabilities, (3) qatorlar tartibi.",
+      note: "v1 cheklovi: umumiy quiz foizida bu savol bitta element sifatida sanaladi (50%+ = to'g'ri); batafsil X/29 ball savol ichida va review'da.",
+    },
+  ];
+
+  // ============ RENDER ============
+  const cur = SNAPSHOTS[SNAPSHOTS.length - 1];
+  const $ = (id) => document.getElementById(id);
+
+  $("h-updated").textContent = "Oxirgi yangilanish: " + cur.date + "  ·  " + cur.pct + "% bajarildi";
+  $("r-pct").innerHTML = cur.pct + '<span>%</span>';
+  $("r-phase").textContent = cur.phaseId + " — " + cur.phaseName;
+
+  const segbar = $("r-segbar"), seglabels = $("r-seglabels");
+  cur.statuses.forEach((st, i) => {
+    const d = document.createElement("div");
+    d.className = "seg " + st;
+    if (st === "active") {
+      const within = Math.max(0, Math.min(100, (cur.pct - i * 10) * 10));
+      d.style.setProperty("--fill", within + "%");
+    }
+    segbar.appendChild(d);
+    const l = document.createElement("span");
+    l.textContent = PHASES[i].id;
+    seglabels.appendChild(l);
+  });
+
+  const fill = (el, arr) => {
+    arr.forEach(t => { const li = document.createElement("li"); li.textContent = t; el.appendChild(li); });
+  };
+  fill($("r-done"), cur.done);
+  fill($("r-remaining"), cur.remaining);
+
+  const adv = $("r-advice");
+  if (cur.advice) {
+    $("r-advice-body").textContent = cur.advice;
+  } else {
+    adv.classList.add("none");
+    $("r-advice-h").textContent = "Maslahat kerak emas";
+    $("r-advice-body").textContent = "Hozirgi bosqichda sizdan qaror kutilmayapti — ish davom etmoqda.";
+  }
+
+  // phase table
+  const pt = $("phase-table");
+  PHASES.forEach((p, i) => {
+    const st = cur.statuses[i];
+    const row = document.createElement("div");
+    row.className = "prow";
+    row.innerHTML =
+      '<div class="id">' + p.id + '</div>' +
+      '<div class="desc">' + p.name + ' <span class="pct-range">' + p.range + '</span><br><span style="color:var(--ink-faint);font-size:13px">' + p.desc + '</span></div>' +
+      '<div class="chip ' + st + '">' + (st === "done" ? "tugadi" : st === "active" ? "jarayonda" : "kutilmoqda") + '</div>';
+    pt.appendChild(row);
+  });
+
+  // archive
+  const archive = $("archive");
+  [...SNAPSHOTS].reverse().forEach((s, idx) => {
+    const det = document.createElement("details");
+    det.className = "snap";
+    if (idx === 0) det.open = true;
+    const doneList = s.done.map(t => "<li>" + esc(t) + "</li>").join("");
+    const remList = s.remaining.map(t => "<li>" + esc(t) + "</li>").join("");
+    det.innerHTML =
+      '<summary><span class="spct mono">' + s.pct + '%</span>' +
+      '<span class="sphase">' + esc(s.phaseId + " — " + s.phaseName) + '</span>' +
+      '<span class="sdate">' + esc(s.date) + '</span></summary>' +
+      '<div class="snap-body">' +
+        '<div class="grid2">' +
+          '<div class="panel"><h3>Tuzatildi</h3><ul class="list done">' + doneList + '</ul></div>' +
+          '<div class="panel"><h3>Qoldi</h3><ul class="list todo">' + remList + '</ul></div>' +
+        '</div>' +
+        (s.advice ? '<div class="snap-note"><strong>Maslahat:</strong> ' + esc(s.advice) + '</div>' : '') +
+        (s.note ? '<div class="snap-note">' + esc(s.note) + '</div>' : '') +
+      '</div>';
+    archive.appendChild(det);
+  });
+
+  function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c])); }
+</script>

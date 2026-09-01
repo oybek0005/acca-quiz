@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local scratch / secrets / personal data — never commit
+/firebase.txt
+/buyruq.txt
+/NEXT_SESSION_TASKS.md
+/fa_quiz_backup_*.json
+/acca-fa-backup-*.json
+/acca-fa-ai-review-*.json
+*.local
+screenshot-*.png
+test-*.js
+fix_dashboard.py

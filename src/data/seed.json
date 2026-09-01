@@ -1,0 +1,3156 @@
+{
+ "version": 1,
+ "source": "fa_quiz_backup_2026-09-01 (old app export)",
+ "note": "Auto-loaded once on first run when no local progress exists. Guarded by localStorage faq_seed_v1.",
+ "attempts": [
+  {
+   "id": "A1788074939833_7649",
+   "mode": "quiz",
+   "sectionLabel": "Double Entry & Theory",
+   "ts": "2026-08-30T07:28:59.833Z",
+   "total": 20,
+   "score": 13,
+   "results": [
+    {
+     "qId": "DE22",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "DEAD CLIC",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE11",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE25",
+     "section": "DE",
+     "correct": false,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE27",
+     "section": "DE",
+     "correct": false,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE21",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "DEAD CLIC",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE40",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE43",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE06",
+     "section": "DE",
+     "correct": false,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE42",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE05",
+     "section": "DE",
+     "correct": false,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE08",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "Daybooks / Journals",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE39",
+     "section": "DE",
+     "correct": false,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE34",
+     "section": "DE",
+     "correct": false,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "T-Accounts / Trial Balance",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE32",
+     "section": "DE",
+     "correct": false,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "T-Accounts / Trial Balance",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE20",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "DEAD CLIC",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE18",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE04",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE30",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "Daybooks / Journals",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE24",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    },
+    {
+     "qId": "DE03",
+     "section": "DE",
+     "correct": true,
+     "timeSpent": 918,
+     "confidence": null,
+     "subtopic": "DEAD CLIC",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T07:28:59.833Z"
+    }
+   ]
+  },
+  {
+   "id": "A1788079056754_7244",
+   "mode": "quiz",
+   "sectionLabel": "Inventory",
+   "ts": "2026-08-30T08:37:36.754Z",
+   "total": 20,
+   "score": 14,
+   "results": [
+    {
+     "qId": "INV03",
+     "section": "INV",
+     "correct": false,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV02",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV28",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV15",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "FIFO / AVCO",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV14",
+     "section": "INV",
+     "correct": false,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "IAS 2 Cost Components",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV33",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "NRV / Lower of Cost & NRV",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV11",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV39",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "FIFO / AVCO",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV13",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "NRV / Lower of Cost & NRV",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV38",
+     "section": "INV",
+     "correct": false,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "IAS 2 Cost Components",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV22",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "NRV / Lower of Cost & NRV",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV23",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV35",
+     "section": "INV",
+     "correct": false,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "NRV / Lower of Cost & NRV",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV09",
+     "section": "INV",
+     "correct": false,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV10",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV20",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "NRV / Lower of Cost & NRV",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV40",
+     "section": "INV",
+     "correct": false,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "IAS 2 Cost Components",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV32",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV18",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "FIFO / AVCO",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    },
+    {
+     "qId": "INV41",
+     "section": "INV",
+     "correct": true,
+     "timeSpent": 1234,
+     "confidence": null,
+     "subtopic": "FIFO / AVCO",
+     "difficulty": "medium",
+     "timestamp": "2026-08-30T08:37:36.754Z"
+    }
+   ]
+  },
+  {
+   "id": "A1788150280157_4946",
+   "mode": "quiz",
+   "sectionLabel": "Tangible Non-Current Assets",
+   "ts": "2026-08-31T04:24:40.157Z",
+   "total": 20,
+   "score": 12,
+   "results": [
+    {
+     "qId": "NCA01",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA24",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Pro-rata / Disposal / Addition",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA39",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Reducing Balance",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA35",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Capital vs Revenue Expenditure",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA12",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Straight-Line Depreciation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA09",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Straight-Line Depreciation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA11",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA18",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Reducing Balance",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA37",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Capital vs Revenue Expenditure",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA10",
+     "section": "NCA",
+     "correct": false,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Straight-Line Depreciation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA28",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Pro-rata / Disposal / Addition",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA02",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Capital vs Revenue Expenditure",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA14",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Straight-Line Depreciation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA22",
+     "section": "NCA",
+     "correct": false,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA33",
+     "section": "NCA",
+     "correct": false,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA04",
+     "section": "NCA",
+     "correct": false,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA26",
+     "section": "NCA",
+     "correct": false,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Reducing Balance",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA19",
+     "section": "NCA",
+     "correct": false,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Reducing Balance",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA40",
+     "section": "NCA",
+     "correct": false,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Pro-rata / Disposal / Addition",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    },
+    {
+     "qId": "NCA41",
+     "section": "NCA",
+     "correct": false,
+     "timeSpent": 901,
+     "confidence": null,
+     "subtopic": "Pro-rata / Disposal / Addition",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T04:24:40.157Z"
+    }
+   ]
+  },
+  {
+   "id": "A1788165784008_719",
+   "mode": "quiz",
+   "sectionLabel": "Tangible Non-Current Assets",
+   "ts": "2026-08-31T08:43:04.008Z",
+   "total": 20,
+   "score": 18,
+   "results": [
+    {
+     "qId": "NCA01",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA16",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Straight-Line Depreciation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA17",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Reducing Balance",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA25",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Pro-rata / Disposal / Addition",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA34",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Capital vs Revenue Expenditure",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA31",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Straight-Line Depreciation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA20",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Pro-rata / Disposal / Addition",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA05",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Pro-rata / Disposal / Addition",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA24",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Pro-rata / Disposal / Addition",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA22",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA38",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Reducing Balance",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA02",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Capital vs Revenue Expenditure",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA33",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA07",
+     "section": "NCA",
+     "correct": false,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA14",
+     "section": "NCA",
+     "correct": false,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Straight-Line Depreciation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA39",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Reducing Balance",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA04",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA30",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Straight-Line Depreciation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA36",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    },
+    {
+     "qId": "NCA26",
+     "section": "NCA",
+     "correct": true,
+     "timeSpent": 1311,
+     "confidence": null,
+     "subtopic": "Reducing Balance",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T08:43:04.008Z"
+    }
+   ]
+  },
+  {
+   "id": "A1788168249357_1310",
+   "mode": "quiz",
+   "sectionLabel": "Intangible Assets",
+   "ts": "2026-08-31T09:24:09.357Z",
+   "total": 20,
+   "score": 20,
+   "results": [
+    {
+     "qId": "INT14",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT22",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "Amortisation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT12",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT20",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "Amortisation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT19",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "Amortisation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT07",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT26",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT08",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "Amortisation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT01",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT09",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT36",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT37",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT27",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT02",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT24",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT34",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT29",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT17",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "Amortisation",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT11",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    },
+    {
+     "qId": "INT30",
+     "section": "INT",
+     "correct": true,
+     "timeSpent": 1903,
+     "confidence": null,
+     "subtopic": "R&D 4-Stage Rule",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:24:09.357Z"
+    }
+   ]
+  },
+  {
+   "id": "A1788170213506_6523",
+   "mode": "quiz",
+   "sectionLabel": "Sales Tax, Discounts & Returns",
+   "ts": "2026-08-31T09:56:53.506Z",
+   "total": 20,
+   "score": 17,
+   "results": [
+    {
+     "qId": "TAX04",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX25",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX16",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "Control Account Reconstruction",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX36",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX33",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX30",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX35",
+     "section": "TAX",
+     "correct": false,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX23",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "Discounts / Returns",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX15",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "Control Account Reconstruction",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX26",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX11",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX29",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX13",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "Control Account Reconstruction",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX18",
+     "section": "TAX",
+     "correct": false,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "Control Account Reconstruction",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX02",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX06",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "Discounts / Returns",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX27",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX37",
+     "section": "TAX",
+     "correct": false,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "General",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX17",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "Control Account Reconstruction",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    },
+    {
+     "qId": "TAX19",
+     "section": "TAX",
+     "correct": true,
+     "timeSpent": 1882,
+     "confidence": null,
+     "subtopic": "Registered vs Unregistered",
+     "difficulty": "medium",
+     "timestamp": "2026-08-31T09:56:53.506Z"
+    }
+   ]
+  }
+ ],
+ "mistakes": {
+  "DE22": {
+   "qId": "DE22",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "DEAD CLIC": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE11": {
+   "qId": "DE11",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE25": {
+   "qId": "DE25",
+   "section": "DE",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "DE27": {
+   "qId": "DE27",
+   "section": "DE",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "DE21": {
+   "qId": "DE21",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "DEAD CLIC": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE40": {
+   "qId": "DE40",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE43": {
+   "qId": "DE43",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE06": {
+   "qId": "DE06",
+   "section": "DE",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "DE42": {
+   "qId": "DE42",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE05": {
+   "qId": "DE05",
+   "section": "DE",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "DE08": {
+   "qId": "DE08",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Daybooks / Journals": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE39": {
+   "qId": "DE39",
+   "section": "DE",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "DE34": {
+   "qId": "DE34",
+   "section": "DE",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "T-Accounts / Trial Balance": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "DE32": {
+   "qId": "DE32",
+   "section": "DE",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "T-Accounts / Trial Balance": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "DE20": {
+   "qId": "DE20",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "DEAD CLIC": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE18": {
+   "qId": "DE18",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE04": {
+   "qId": "DE04",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE30": {
+   "qId": "DE30",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Daybooks / Journals": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE24": {
+   "qId": "DE24",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "DE03": {
+   "qId": "DE03",
+   "section": "DE",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T07:28:59.834Z",
+   "firstSeen": "2026-08-30T07:28:59.834Z",
+   "avgTimeSpent": 918.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "DEAD CLIC": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV03": {
+   "qId": "INV03",
+   "section": "INV",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "INV02": {
+   "qId": "INV02",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV28": {
+   "qId": "INV28",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV15": {
+   "qId": "INV15",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "FIFO / AVCO": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV14": {
+   "qId": "INV14",
+   "section": "INV",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "IAS 2 Cost Components": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "INV33": {
+   "qId": "INV33",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "NRV / Lower of Cost & NRV": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV11": {
+   "qId": "INV11",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV39": {
+   "qId": "INV39",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "FIFO / AVCO": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV13": {
+   "qId": "INV13",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "NRV / Lower of Cost & NRV": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV38": {
+   "qId": "INV38",
+   "section": "INV",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "IAS 2 Cost Components": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "INV22": {
+   "qId": "INV22",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "NRV / Lower of Cost & NRV": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV23": {
+   "qId": "INV23",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV35": {
+   "qId": "INV35",
+   "section": "INV",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "NRV / Lower of Cost & NRV": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "INV09": {
+   "qId": "INV09",
+   "section": "INV",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "INV10": {
+   "qId": "INV10",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV20": {
+   "qId": "INV20",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "NRV / Lower of Cost & NRV": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV40": {
+   "qId": "INV40",
+   "section": "INV",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "IAS 2 Cost Components": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "INV32": {
+   "qId": "INV32",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV18": {
+   "qId": "INV18",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "FIFO / AVCO": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INV41": {
+   "qId": "INV41",
+   "section": "INV",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-30T08:37:36.758Z",
+   "firstSeen": "2026-08-30T08:37:36.758Z",
+   "avgTimeSpent": 1234.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "FIFO / AVCO": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA01": {
+   "qId": "NCA01",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 2,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 1106.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 2
+    }
+   }
+  },
+  "NCA24": {
+   "qId": "NCA24",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 2,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 1106.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Pro-rata / Disposal / Addition": {
+     "wrong": 0,
+     "correct": 2
+    }
+   }
+  },
+  "NCA39": {
+   "qId": "NCA39",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 2,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 1106.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Reducing Balance": {
+     "wrong": 0,
+     "correct": 2
+    }
+   }
+  },
+  "NCA35": {
+   "qId": "NCA35",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Capital vs Revenue Expenditure": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA12": {
+   "qId": "NCA12",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Straight-Line Depreciation": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA09": {
+   "qId": "NCA09",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Straight-Line Depreciation": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA11": {
+   "qId": "NCA11",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA18": {
+   "qId": "NCA18",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Reducing Balance": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA37": {
+   "qId": "NCA37",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Capital vs Revenue Expenditure": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA10": {
+   "qId": "NCA10",
+   "section": "NCA",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Straight-Line Depreciation": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "NCA28": {
+   "qId": "NCA28",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Pro-rata / Disposal / Addition": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA02": {
+   "qId": "NCA02",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 2,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 1106.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Capital vs Revenue Expenditure": {
+     "wrong": 0,
+     "correct": 2
+    }
+   }
+  },
+  "NCA14": {
+   "qId": "NCA14",
+   "section": "NCA",
+   "wrongCount": 1,
+   "correctCount": 1,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 1106.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Straight-Line Depreciation": {
+     "wrong": 1,
+     "correct": 1
+    }
+   }
+  },
+  "NCA22": {
+   "qId": "NCA22",
+   "section": "NCA",
+   "wrongCount": 1,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 1106.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 1
+    }
+   }
+  },
+  "NCA33": {
+   "qId": "NCA33",
+   "section": "NCA",
+   "wrongCount": 1,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 1106.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 1
+    }
+   }
+  },
+  "NCA04": {
+   "qId": "NCA04",
+   "section": "NCA",
+   "wrongCount": 1,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 1106.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 1
+    }
+   }
+  },
+  "NCA26": {
+   "qId": "NCA26",
+   "section": "NCA",
+   "wrongCount": 1,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 1106.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Reducing Balance": {
+     "wrong": 1,
+     "correct": 1
+    }
+   }
+  },
+  "NCA19": {
+   "qId": "NCA19",
+   "section": "NCA",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Reducing Balance": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "NCA40": {
+   "qId": "NCA40",
+   "section": "NCA",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Pro-rata / Disposal / Addition": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "NCA41": {
+   "qId": "NCA41",
+   "section": "NCA",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-31T04:24:40.161Z",
+   "firstSeen": "2026-08-31T04:24:40.161Z",
+   "avgTimeSpent": 901.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Pro-rata / Disposal / Addition": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "NCA16": {
+   "qId": "NCA16",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Straight-Line Depreciation": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA17": {
+   "qId": "NCA17",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Reducing Balance": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA25": {
+   "qId": "NCA25",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Pro-rata / Disposal / Addition": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA34": {
+   "qId": "NCA34",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Capital vs Revenue Expenditure": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA31": {
+   "qId": "NCA31",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Straight-Line Depreciation": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA20": {
+   "qId": "NCA20",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Pro-rata / Disposal / Addition": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA05": {
+   "qId": "NCA05",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Pro-rata / Disposal / Addition": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA38": {
+   "qId": "NCA38",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Reducing Balance": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA07": {
+   "qId": "NCA07",
+   "section": "NCA",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "NCA30": {
+   "qId": "NCA30",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Straight-Line Depreciation": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "NCA36": {
+   "qId": "NCA36",
+   "section": "NCA",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T08:43:04.009Z",
+   "firstSeen": "2026-08-31T08:43:04.009Z",
+   "avgTimeSpent": 1311.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT14": {
+   "qId": "INT14",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT22": {
+   "qId": "INT22",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Amortisation": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT12": {
+   "qId": "INT12",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT20": {
+   "qId": "INT20",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Amortisation": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT19": {
+   "qId": "INT19",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Amortisation": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT07": {
+   "qId": "INT07",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT26": {
+   "qId": "INT26",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT08": {
+   "qId": "INT08",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Amortisation": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT01": {
+   "qId": "INT01",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT09": {
+   "qId": "INT09",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT36": {
+   "qId": "INT36",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT37": {
+   "qId": "INT37",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT27": {
+   "qId": "INT27",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT02": {
+   "qId": "INT02",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT24": {
+   "qId": "INT24",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT34": {
+   "qId": "INT34",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT29": {
+   "qId": "INT29",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT17": {
+   "qId": "INT17",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Amortisation": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT11": {
+   "qId": "INT11",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "INT30": {
+   "qId": "INT30",
+   "section": "INT",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:24:09.357Z",
+   "firstSeen": "2026-08-31T09:24:09.357Z",
+   "avgTimeSpent": 1903.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "R&D 4-Stage Rule": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX04": {
+   "qId": "TAX04",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX25": {
+   "qId": "TAX25",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX16": {
+   "qId": "TAX16",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Control Account Reconstruction": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX36": {
+   "qId": "TAX36",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX33": {
+   "qId": "TAX33",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX30": {
+   "qId": "TAX30",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX35": {
+   "qId": "TAX35",
+   "section": "TAX",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "TAX23": {
+   "qId": "TAX23",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Discounts / Returns": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX15": {
+   "qId": "TAX15",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Control Account Reconstruction": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX26": {
+   "qId": "TAX26",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX11": {
+   "qId": "TAX11",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX29": {
+   "qId": "TAX29",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX13": {
+   "qId": "TAX13",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Control Account Reconstruction": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX18": {
+   "qId": "TAX18",
+   "section": "TAX",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Control Account Reconstruction": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "TAX02": {
+   "qId": "TAX02",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX06": {
+   "qId": "TAX06",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Discounts / Returns": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX27": {
+   "qId": "TAX27",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX37": {
+   "qId": "TAX37",
+   "section": "TAX",
+   "wrongCount": 1,
+   "correctCount": 0,
+   "lastResult": "wrong",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "General": {
+     "wrong": 1,
+     "correct": 0
+    }
+   }
+  },
+  "TAX17": {
+   "qId": "TAX17",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Control Account Reconstruction": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  },
+  "TAX19": {
+   "qId": "TAX19",
+   "section": "TAX",
+   "wrongCount": 0,
+   "correctCount": 1,
+   "lastResult": "correct",
+   "lastTs": "2026-08-31T09:56:53.506Z",
+   "firstSeen": "2026-08-31T09:56:53.506Z",
+   "avgTimeSpent": 1882.0,
+   "highConfidenceErrors": 0,
+   "subtopics": {
+    "Registered vs Unregistered": {
+     "wrong": 0,
+     "correct": 1
+    }
+   }
+  }
+ }
+}
