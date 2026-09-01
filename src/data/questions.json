@@ -2,7 +2,7 @@
  "meta": {
   "generated": "2026-08-27",
   "version": 1,
-  "totalQuestions": 342,
+  "totalQuestions": 346,
   "updated": "2026-09-01"
  },
  "sections": {
@@ -1263,6 +1263,1922 @@
         },
         {
          "lineId": "sofp_loan_notes",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_total_current_liabilities",
+         "op": "+"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "FS2",
+     "t": "fs",
+     "section": "DE",
+     "q": "<b>Bluebird Retail Co</b> - prepare the full Statement of Profit or Loss and Statement of Financial Position from the trial balance and notes below. Enter every figure, including subtotals and totals.",
+     "a": null,
+     "ex": "Key workings: <b>Distribution costs</b> = 22,000 - 1,200 prepayment + 30,000 depreciation (20% straight-line x 150,000) = 50,800. <b>Administrative expenses</b> = 30,000 + 2,300 audit fee accrual = 32,300. <b>Retained earnings</b> = 45,000 b/f + 49,300 profit for the year - 5,000 dividends paid = 89,300 (dividends reduce retained earnings directly - they never pass through the SPL). The statement balances at $210,100.",
+     "topic": "Financial statements",
+     "subtopic": "Full financial statements (company) - investment income & dividends",
+     "difficulty": "medium",
+     "source": "ai-generated",
+     "entityType": "company",
+     "yearEndDate": "30 June 20X6",
+     "scenario": "Bluebird Retail Co is a limited company. Prepare its financial statements for the year ended 30 June 20X6.",
+     "tolerance": 0,
+     "trialBalance": [
+      {
+       "account": "Purchases",
+       "debit": 180000,
+       "credit": null
+      },
+      {
+       "account": "Inventory at 1 July 20X5",
+       "debit": 14000,
+       "credit": null
+      },
+      {
+       "account": "Distribution costs",
+       "debit": 22000,
+       "credit": null
+      },
+      {
+       "account": "Administrative expenses",
+       "debit": 30000,
+       "credit": null
+      },
+      {
+       "account": "Trade receivables",
+       "debit": 35000,
+       "credit": null
+      },
+      {
+       "account": "Property, plant and equipment - cost",
+       "debit": 150000,
+       "credit": null
+      },
+      {
+       "account": "Dividends paid",
+       "debit": 5000,
+       "credit": null
+      },
+      {
+       "account": "Bank",
+       "debit": 82900,
+       "credit": null
+      },
+      {
+       "account": "Revenue",
+       "debit": null,
+       "credit": 320000
+      },
+      {
+       "account": "$1 ordinary share capital",
+       "debit": null,
+       "credit": 80000
+      },
+      {
+       "account": "Share premium",
+       "debit": null,
+       "credit": 10000
+      },
+      {
+       "account": "Retained earnings at 1 July 20X5",
+       "debit": null,
+       "credit": 45000
+      },
+      {
+       "account": "Trade payables",
+       "debit": null,
+       "credit": 18000
+      },
+      {
+       "account": "PPE - accumulated depreciation at 1 July 20X5",
+       "debit": null,
+       "credit": 45000
+      },
+      {
+       "account": "Investment income",
+       "debit": null,
+       "credit": 900
+      }
+     ],
+     "adjustmentNotes": [
+      {
+       "ref": 1,
+       "text": "Closing inventory at 30 June 20X6 was valued at cost of $16,000."
+      },
+      {
+       "ref": 2,
+       "text": "Distribution costs include a prepayment of $1,200 for an advertising campaign that runs until September 20X6."
+      },
+      {
+       "ref": 3,
+       "text": "Administrative expenses do not yet include an accrual of $2,300 for audit fees for the year."
+      },
+      {
+       "ref": 4,
+       "text": "Property, plant and equipment is depreciated at 20% per annum straight-line on cost, charged to distribution costs."
+      },
+      {
+       "ref": 5,
+       "text": "Income tax for the year is estimated at $10,500."
+      }
+     ],
+     "lines": [
+      {
+       "id": "spl_revenue",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Revenue",
+       "kind": "input",
+       "correctValue": 320000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "spl_cos",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Cost of sales",
+       "kind": "input",
+       "correctValue": 178000,
+       "marks": 2,
+       "deduction": true,
+       "workingHint": "Opening 14,000 + Purchases 180,000 - Closing 16,000"
+      },
+      {
+       "id": "spl_gross_profit",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Gross profit",
+       "kind": "subtotal",
+       "correctValue": 142000,
+       "marks": 1,
+       "workingHint": "Revenue - Cost of sales",
+       "formula": [
+        {
+         "lineId": "spl_revenue",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_cos",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "spl_distribution",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Distribution costs",
+       "kind": "input",
+       "correctValue": 50800,
+       "marks": 2,
+       "deduction": true,
+       "workingHint": "22,000 - 1,200 prepayment (note 2) + 30,000 depreciation (note 4: 20% x 150,000)"
+      },
+      {
+       "id": "spl_admin",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Administrative expenses",
+       "kind": "input",
+       "correctValue": 32300,
+       "marks": 1,
+       "deduction": true,
+       "workingHint": "30,000 + 2,300 accrual (note 3)"
+      },
+      {
+       "id": "spl_operating_profit",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Operating profit",
+       "kind": "subtotal",
+       "correctValue": 58900,
+       "marks": 1,
+       "workingHint": "Gross profit - distribution - admin",
+       "formula": [
+        {
+         "lineId": "spl_gross_profit",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_distribution",
+         "op": "-"
+        },
+        {
+         "lineId": "spl_admin",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "spl_investment_income",
+       "statement": "SPL",
+       "group": "Investing & financing",
+       "label": "Investment income",
+       "kind": "input",
+       "correctValue": 900,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "spl_pbt",
+       "statement": "SPL",
+       "group": "Investing & financing",
+       "label": "Profit before income tax",
+       "kind": "subtotal",
+       "correctValue": 59800,
+       "marks": 1,
+       "workingHint": "Operating profit + investment income",
+       "formula": [
+        {
+         "lineId": "spl_operating_profit",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_investment_income",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "spl_tax",
+       "statement": "SPL",
+       "group": "Tax",
+       "label": "Income tax expense",
+       "kind": "input",
+       "correctValue": 10500,
+       "marks": 1,
+       "deduction": true,
+       "workingHint": "Note 5"
+      },
+      {
+       "id": "spl_profit_for_year",
+       "statement": "SPL",
+       "group": "Tax",
+       "label": "Profit for the year",
+       "kind": "subtotal",
+       "correctValue": 49300,
+       "marks": 1,
+       "workingHint": "Profit before tax - income tax",
+       "formula": [
+        {
+         "lineId": "spl_pbt",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_tax",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "sofp_ppe",
+       "statement": "SOFP",
+       "group": "Non-current assets",
+       "label": "Property, plant and equipment",
+       "kind": "input",
+       "correctValue": 75000,
+       "marks": 2,
+       "workingHint": "150,000 cost - (45,000 + 30,000) accumulated depreciation"
+      },
+      {
+       "id": "sofp_inventory",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Inventories",
+       "kind": "input",
+       "correctValue": 16000,
+       "marks": 1,
+       "workingHint": "Closing inventory (note 1)"
+      },
+      {
+       "id": "sofp_receivables",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Trade receivables",
+       "kind": "input",
+       "correctValue": 35000,
+       "marks": 1,
+       "workingHint": "Per trial balance - no adjustment needed"
+      },
+      {
+       "id": "sofp_prepayments",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Prepayments",
+       "kind": "input",
+       "correctValue": 1200,
+       "marks": 1,
+       "workingHint": "Note 2"
+      },
+      {
+       "id": "sofp_cash",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Cash and cash equivalents",
+       "kind": "input",
+       "correctValue": 82900,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_total_assets",
+       "statement": "SOFP",
+       "group": "Totals",
+       "label": "Total assets",
+       "kind": "subtotal",
+       "correctValue": 210100,
+       "marks": 1,
+       "workingHint": "Sum of all assets above",
+       "formula": [
+        {
+         "lineId": "sofp_ppe",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_inventory",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_receivables",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_prepayments",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_cash",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_share_capital",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Share capital",
+       "kind": "input",
+       "correctValue": 80000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_share_premium",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Share premium",
+       "kind": "input",
+       "correctValue": 10000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_retained_earnings",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Retained earnings",
+       "kind": "input",
+       "correctValue": 89300,
+       "marks": 2,
+       "workingHint": "45,000 b/f + 49,300 profit for the year - 5,000 dividends paid"
+      },
+      {
+       "id": "sofp_total_equity",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Total equity",
+       "kind": "subtotal",
+       "correctValue": 179300,
+       "marks": 1,
+       "workingHint": "Share capital + share premium + retained earnings",
+       "formula": [
+        {
+         "lineId": "sofp_share_capital",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_share_premium",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_retained_earnings",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_payables",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Trade payables",
+       "kind": "input",
+       "correctValue": 18000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_accruals",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Accruals",
+       "kind": "input",
+       "correctValue": 2300,
+       "marks": 1,
+       "workingHint": "Audit fee accrual (note 3)"
+      },
+      {
+       "id": "sofp_tax_payable",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Tax payable",
+       "kind": "input",
+       "correctValue": 10500,
+       "marks": 1,
+       "workingHint": "Note 5"
+      },
+      {
+       "id": "sofp_total_current_liabilities",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Total current liabilities",
+       "kind": "subtotal",
+       "correctValue": 30800,
+       "marks": 1,
+       "workingHint": "Payables + accruals + tax payable",
+       "formula": [
+        {
+         "lineId": "sofp_payables",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_accruals",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_tax_payable",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_total_equity_and_liabilities",
+       "statement": "SOFP",
+       "group": "Totals",
+       "label": "Total equity and liabilities",
+       "kind": "subtotal",
+       "correctValue": 210100,
+       "marks": 1,
+       "workingHint": "Total equity + total current liabilities (no non-current liabilities)",
+       "formula": [
+        {
+         "lineId": "sofp_total_equity",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_total_current_liabilities",
+         "op": "+"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "FS3",
+     "t": "fs",
+     "section": "DE",
+     "q": "<b>Horizon Manufacturing Co</b> - prepare the full Statement of Profit or Loss and Statement of Financial Position from the trial balance and notes below. Enter every figure, including subtotals and totals.",
+     "a": null,
+     "ex": "Key workings: <b>Inventory</b> $22,500 counted, less a $1,400 NRV write-down on the faulty batch (cost $3,000 vs NRV of $1,600) = $21,100. <b>Disposal</b>: the machine's cost $20,000 and accumulated depreciation $14,000 are removed from PPE; proceeds $8,000 less its $6,000 carrying amount = $2,000 profit on disposal, credited to administrative expenses. <b>Depreciation</b> is 15% reducing balance on the $164,000 carrying amount that remains after removing the disposed machine = $24,600, charged to cost of sales. <b>Allowance for receivables</b> increases from $1,500 to $2,200 (a $700 expense - no write-off this time). <b>Finance costs</b> = 5% x $30,000 = $1,500; $900 paid, $600 accrued. The statement balances at $319,300.",
+     "topic": "Financial statements",
+     "subtopic": "Full financial statements (company) - disposal & inventory NRV",
+     "difficulty": "hard",
+     "source": "ai-generated",
+     "entityType": "company",
+     "yearEndDate": "31 March 20X6",
+     "scenario": "Horizon Manufacturing Co is a limited company. Prepare its financial statements for the year ended 31 March 20X6.",
+     "tolerance": 0,
+     "trialBalance": [
+      {
+       "account": "Purchases",
+       "debit": 210000,
+       "credit": null
+      },
+      {
+       "account": "Inventory at 1 April 20X5",
+       "debit": 18000,
+       "credit": null
+      },
+      {
+       "account": "Distribution costs",
+       "debit": 26000,
+       "credit": null
+      },
+      {
+       "account": "Administrative expenses",
+       "debit": 34000,
+       "credit": null
+      },
+      {
+       "account": "Trade receivables",
+       "debit": 48000,
+       "credit": null
+      },
+      {
+       "account": "Property, plant and equipment - cost",
+       "debit": 260000,
+       "credit": null
+      },
+      {
+       "account": "Loan interest paid",
+       "debit": 900,
+       "credit": null
+      },
+      {
+       "account": "Bank",
+       "debit": 111600,
+       "credit": null
+      },
+      {
+       "account": "Revenue",
+       "debit": null,
+       "credit": 400000
+      },
+      {
+       "account": "Disposal proceeds",
+       "debit": null,
+       "credit": 8000
+      },
+      {
+       "account": "$1 ordinary share capital",
+       "debit": null,
+       "credit": 100000
+      },
+      {
+       "account": "Retained earnings at 1 April 20X5",
+       "debit": null,
+       "credit": 52000
+      },
+      {
+       "account": "Trade payables",
+       "debit": null,
+       "credit": 27000
+      },
+      {
+       "account": "Allowance for receivables at 1 April 20X5",
+       "debit": null,
+       "credit": 1500
+      },
+      {
+       "account": "PPE - accumulated depreciation at 1 April 20X5",
+       "debit": null,
+       "credit": 90000
+      },
+      {
+       "account": "5% loan notes (repayable 2031)",
+       "debit": null,
+       "credit": 30000
+      }
+     ],
+     "adjustmentNotes": [
+      {
+       "ref": 1,
+       "text": "Closing inventory at 31 March 20X6 was counted at cost of $22,500. This includes a batch of goods that cost $3,000 but, due to a manufacturing fault, can now only be sold for $1,800 after incurring further selling costs of $200."
+      },
+      {
+       "ref": 2,
+       "text": "During the year an old machine that had originally cost $20,000 and had accumulated depreciation of $14,000 at the date of sale was sold for $8,000. The proceeds have been credited to a disposals account and no other entry has been made."
+      },
+      {
+       "ref": 3,
+       "text": "Administrative expenses include a prepayment of $1,400 for rates relating to the period after the year end."
+      },
+      {
+       "ref": 4,
+       "text": "Distribution costs do not yet include an accrual of $1,100 for utility costs relating to March 20X6."
+      },
+      {
+       "ref": 5,
+       "text": "Property, plant and equipment (excluding the machine disposed of in note 2, which should first be removed from cost and accumulated depreciation) is depreciated at 15% per annum on the reducing balance basis, charged to cost of sales."
+      },
+      {
+       "ref": 6,
+       "text": "The allowance for receivables is to be increased to $2,200. No debts are to be written off as irrecoverable."
+      },
+      {
+       "ref": 7,
+       "text": "The 5% loan notes were in issue throughout the year. Interest of $900 has been paid and is included in the trial balance; the remaining interest for the year is accrued but unpaid."
+      },
+      {
+       "ref": 8,
+       "text": "Income tax for the year is estimated at $12,000."
+      }
+     ],
+     "lines": [
+      {
+       "id": "spl_revenue",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Revenue",
+       "kind": "input",
+       "correctValue": 400000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "spl_cos",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Cost of sales",
+       "kind": "input",
+       "correctValue": 231500,
+       "marks": 2,
+       "deduction": true,
+       "workingHint": "Opening 18,000 + Purchases 210,000 - Closing inventory 21,100 (note 1) + Depreciation 24,600 charged to cost of sales (note 5)"
+      },
+      {
+       "id": "spl_gross_profit",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Gross profit",
+       "kind": "subtotal",
+       "correctValue": 168500,
+       "marks": 1,
+       "workingHint": "Revenue - Cost of sales",
+       "formula": [
+        {
+         "lineId": "spl_revenue",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_cos",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "spl_distribution",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Distribution costs",
+       "kind": "input",
+       "correctValue": 27100,
+       "marks": 1,
+       "deduction": true,
+       "workingHint": "26,000 + 1,100 accrual (note 4)"
+      },
+      {
+       "id": "spl_admin",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Administrative expenses",
+       "kind": "input",
+       "correctValue": 31300,
+       "marks": 2,
+       "deduction": true,
+       "workingHint": "34,000 - 1,400 prepayment (note 3) + 700 increase in allowance (note 6) - 2,000 profit on disposal (note 2)"
+      },
+      {
+       "id": "spl_operating_profit",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Operating profit",
+       "kind": "subtotal",
+       "correctValue": 110100,
+       "marks": 1,
+       "workingHint": "Gross profit - distribution - admin",
+       "formula": [
+        {
+         "lineId": "spl_gross_profit",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_distribution",
+         "op": "-"
+        },
+        {
+         "lineId": "spl_admin",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "spl_finance_costs",
+       "statement": "SPL",
+       "group": "Investing & financing",
+       "label": "Finance costs",
+       "kind": "input",
+       "correctValue": 1500,
+       "marks": 1,
+       "deduction": true,
+       "workingHint": "5% x 30,000 loan notes, full year (note 7)"
+      },
+      {
+       "id": "spl_pbt",
+       "statement": "SPL",
+       "group": "Investing & financing",
+       "label": "Profit before income tax",
+       "kind": "subtotal",
+       "correctValue": 108600,
+       "marks": 1,
+       "workingHint": "Operating profit - finance costs",
+       "formula": [
+        {
+         "lineId": "spl_operating_profit",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_finance_costs",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "spl_tax",
+       "statement": "SPL",
+       "group": "Tax",
+       "label": "Income tax expense",
+       "kind": "input",
+       "correctValue": 12000,
+       "marks": 1,
+       "deduction": true,
+       "workingHint": "Note 8"
+      },
+      {
+       "id": "spl_profit_for_year",
+       "statement": "SPL",
+       "group": "Tax",
+       "label": "Profit for the year",
+       "kind": "subtotal",
+       "correctValue": 96600,
+       "marks": 1,
+       "workingHint": "Profit before tax - income tax",
+       "formula": [
+        {
+         "lineId": "spl_pbt",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_tax",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "sofp_ppe",
+       "statement": "SOFP",
+       "group": "Non-current assets",
+       "label": "Property, plant and equipment",
+       "kind": "input",
+       "correctValue": 139400,
+       "marks": 3,
+       "workingHint": "Cost 260,000 - 20,000 disposed = 240,000; accumulated depreciation (90,000 - 14,000 disposed + 24,600 charge) = 100,600; carrying amount = 139,400"
+      },
+      {
+       "id": "sofp_inventory",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Inventories",
+       "kind": "input",
+       "correctValue": 21100,
+       "marks": 2,
+       "workingHint": "22,500 counted - 1,400 NRV write-down (note 1)"
+      },
+      {
+       "id": "sofp_receivables",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Trade receivables",
+       "kind": "input",
+       "correctValue": 45800,
+       "marks": 1,
+       "workingHint": "48,000 - 2,200 allowance (note 6)"
+      },
+      {
+       "id": "sofp_prepayments",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Prepayments",
+       "kind": "input",
+       "correctValue": 1400,
+       "marks": 1,
+       "workingHint": "Note 3"
+      },
+      {
+       "id": "sofp_cash",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Cash and cash equivalents",
+       "kind": "input",
+       "correctValue": 111600,
+       "marks": 1,
+       "workingHint": "Per trial balance (already includes the $8,000 disposal proceeds received)"
+      },
+      {
+       "id": "sofp_total_assets",
+       "statement": "SOFP",
+       "group": "Totals",
+       "label": "Total assets",
+       "kind": "subtotal",
+       "correctValue": 319300,
+       "marks": 1,
+       "workingHint": "Sum of all assets above",
+       "formula": [
+        {
+         "lineId": "sofp_ppe",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_inventory",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_receivables",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_prepayments",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_cash",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_share_capital",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Share capital",
+       "kind": "input",
+       "correctValue": 100000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_retained_earnings",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Retained earnings",
+       "kind": "input",
+       "correctValue": 148600,
+       "marks": 1,
+       "workingHint": "52,000 b/f + 96,600 profit for the year"
+      },
+      {
+       "id": "sofp_total_equity",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Total equity",
+       "kind": "subtotal",
+       "correctValue": 248600,
+       "marks": 1,
+       "workingHint": "Share capital + retained earnings",
+       "formula": [
+        {
+         "lineId": "sofp_share_capital",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_retained_earnings",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_loan_notes",
+       "statement": "SOFP",
+       "group": "Non-current liabilities",
+       "label": "Loan notes",
+       "kind": "input",
+       "correctValue": 30000,
+       "marks": 1,
+       "workingHint": "Per trial balance (repayable 2031)"
+      },
+      {
+       "id": "sofp_payables",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Trade payables",
+       "kind": "input",
+       "correctValue": 27000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_accruals",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Accruals",
+       "kind": "input",
+       "correctValue": 1700,
+       "marks": 1,
+       "workingHint": "1,100 utilities (note 4) + 600 loan interest (note 7: 1,500 - 900 paid)"
+      },
+      {
+       "id": "sofp_tax_payable",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Tax payable",
+       "kind": "input",
+       "correctValue": 12000,
+       "marks": 1,
+       "workingHint": "Note 8"
+      },
+      {
+       "id": "sofp_total_current_liabilities",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Total current liabilities",
+       "kind": "subtotal",
+       "correctValue": 40700,
+       "marks": 1,
+       "workingHint": "Payables + accruals + tax payable",
+       "formula": [
+        {
+         "lineId": "sofp_payables",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_accruals",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_tax_payable",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_total_equity_and_liabilities",
+       "statement": "SOFP",
+       "group": "Totals",
+       "label": "Total equity and liabilities",
+       "kind": "subtotal",
+       "correctValue": 319300,
+       "marks": 1,
+       "workingHint": "Total equity + loan notes + total current liabilities",
+       "formula": [
+        {
+         "lineId": "sofp_total_equity",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_loan_notes",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_total_current_liabilities",
+         "op": "+"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "FS4",
+     "t": "fs",
+     "section": "DE",
+     "q": "<b>Karim</b> is a sole trader - prepare the full Statement of Profit or Loss and Statement of Financial Position from the trial balance and notes below. Enter every figure, including subtotals and totals.",
+     "a": null,
+     "ex": "Key workings: <b>Cost of sales</b> deducts the $500 of goods Karim took for his own use, as well as the usual opening/closing inventory (7,500 + 90,000 - 500 - 8,200 = 88,800). <b>Depreciation</b> = 20% straight-line x 60,000 = 12,000. <b>Allowance for receivables</b> falls from 400 to 320 (2% x 16,000), so 80 is credited to administrative expenses. <b>Finance costs</b> = 10% x 8,000 = 800; 400 paid, 400 accrued. Note there is no income tax line here - a sole trader is taxed personally, not the business, so profit for the year is the final SPL figure. <b>Drawings</b> = 18,000 cash + 500 goods for own use = 18,500. <b>Capital c/f</b> = 44,500 b/f + 19,230 profit - 18,500 drawings = 45,230. The statement balances at $63,480.",
+     "topic": "Financial statements",
+     "subtopic": "Full financial statements (sole trader)",
+     "difficulty": "medium",
+     "source": "ai-generated",
+     "entityType": "soleTrader",
+     "yearEndDate": "30 April 20X6",
+     "scenario": "Karim is a sole trader running a hardware business. Prepare his financial statements for the year ended 30 April 20X6.",
+     "tolerance": 0,
+     "trialBalance": [
+      {
+       "account": "Purchases",
+       "debit": 90000,
+       "credit": null
+      },
+      {
+       "account": "Inventory at 1 May 20X5",
+       "debit": 7500,
+       "credit": null
+      },
+      {
+       "account": "Distribution costs",
+       "debit": 9000,
+       "credit": null
+      },
+      {
+       "account": "Administrative expenses",
+       "debit": 15500,
+       "credit": null
+      },
+      {
+       "account": "Trade receivables",
+       "debit": 16000,
+       "credit": null
+      },
+      {
+       "account": "Property, plant and equipment - cost",
+       "debit": 60000,
+       "credit": null
+      },
+      {
+       "account": "Drawings",
+       "debit": 18000,
+       "credit": null
+      },
+      {
+       "account": "Loan interest paid",
+       "debit": 400,
+       "credit": null
+      },
+      {
+       "account": "Bank",
+       "debit": 12000,
+       "credit": null
+      },
+      {
+       "account": "Revenue",
+       "debit": null,
+       "credit": 145000
+      },
+      {
+       "account": "Capital account at 1 May 20X5",
+       "debit": null,
+       "credit": 44500
+      },
+      {
+       "account": "Trade payables",
+       "debit": null,
+       "credit": 9500
+      },
+      {
+       "account": "PPE - accumulated depreciation at 1 May 20X5",
+       "debit": null,
+       "credit": 21000
+      },
+      {
+       "account": "Allowance for receivables at 1 May 20X5",
+       "debit": null,
+       "credit": 400
+      },
+      {
+       "account": "10% business loan (repayable 2029)",
+       "debit": null,
+       "credit": 8000
+      }
+     ],
+     "adjustmentNotes": [
+      {
+       "ref": 1,
+       "text": "Closing inventory at 30 April 20X6 was valued at cost of $8,200."
+      },
+      {
+       "ref": 2,
+       "text": "Administrative expenses include a prepayment of $600 for insurance relating to the period after the year end."
+      },
+      {
+       "ref": 3,
+       "text": "Distribution costs do not yet include an accrual of $350 for fuel costs."
+      },
+      {
+       "ref": 4,
+       "text": "Property, plant and equipment is depreciated at 20% per annum straight-line on cost, charged to administrative expenses."
+      },
+      {
+       "ref": 5,
+       "text": "The allowance for receivables is to be adjusted to 2% of trade receivables. No debts are to be written off."
+      },
+      {
+       "ref": 6,
+       "text": "During the year Karim took goods that cost $500 out of the business for his own personal use. No entry has yet been made for this."
+      },
+      {
+       "ref": 7,
+       "text": "The 10% loan has been in place all year. Interest of $400 has been paid and is included in the trial balance; the remaining interest for the year is accrued but unpaid."
+      }
+     ],
+     "lines": [
+      {
+       "id": "spl_revenue",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Revenue",
+       "kind": "input",
+       "correctValue": 145000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "spl_cos",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Cost of sales",
+       "kind": "input",
+       "correctValue": 88800,
+       "marks": 2,
+       "deduction": true,
+       "workingHint": "Opening 7,500 + Purchases 90,000 - 500 goods for own use (note 6) - Closing 8,200 (note 1)"
+      },
+      {
+       "id": "spl_gross_profit",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Gross profit",
+       "kind": "subtotal",
+       "correctValue": 56200,
+       "marks": 1,
+       "workingHint": "Revenue - Cost of sales",
+       "formula": [
+        {
+         "lineId": "spl_revenue",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_cos",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "spl_distribution",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Distribution costs",
+       "kind": "input",
+       "correctValue": 9350,
+       "marks": 1,
+       "deduction": true,
+       "workingHint": "9,000 + 350 accrual (note 3)"
+      },
+      {
+       "id": "spl_admin",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Administrative expenses",
+       "kind": "input",
+       "correctValue": 26820,
+       "marks": 2,
+       "deduction": true,
+       "workingHint": "15,500 - 600 prepayment (note 2) + 12,000 depreciation (note 4) - 80 decrease in allowance (note 5: 2% x 16,000 = 320, down from 400)"
+      },
+      {
+       "id": "spl_operating_profit",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Operating profit",
+       "kind": "subtotal",
+       "correctValue": 20030,
+       "marks": 1,
+       "workingHint": "Gross profit - distribution - admin",
+       "formula": [
+        {
+         "lineId": "spl_gross_profit",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_distribution",
+         "op": "-"
+        },
+        {
+         "lineId": "spl_admin",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "spl_finance_costs",
+       "statement": "SPL",
+       "group": "Investing & financing",
+       "label": "Finance costs",
+       "kind": "input",
+       "correctValue": 800,
+       "marks": 1,
+       "deduction": true,
+       "workingHint": "10% x 8,000 loan, full year (note 7)"
+      },
+      {
+       "id": "spl_profit_for_year",
+       "statement": "SPL",
+       "group": "Investing & financing",
+       "label": "Profit for the year",
+       "kind": "subtotal",
+       "correctValue": 19230,
+       "marks": 1,
+       "workingHint": "Operating profit - finance costs (no tax line - a sole trader is taxed personally, not the business)",
+       "formula": [
+        {
+         "lineId": "spl_operating_profit",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_finance_costs",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "sofp_ppe",
+       "statement": "SOFP",
+       "group": "Non-current assets",
+       "label": "Property, plant and equipment",
+       "kind": "input",
+       "correctValue": 27000,
+       "marks": 2,
+       "workingHint": "60,000 cost - (21,000 + 12,000) accumulated depreciation"
+      },
+      {
+       "id": "sofp_inventory",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Inventories",
+       "kind": "input",
+       "correctValue": 8200,
+       "marks": 1,
+       "workingHint": "Closing inventory (note 1)"
+      },
+      {
+       "id": "sofp_receivables",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Trade receivables",
+       "kind": "input",
+       "correctValue": 15680,
+       "marks": 1,
+       "workingHint": "16,000 - 320 allowance (note 5: 2% x 16,000)"
+      },
+      {
+       "id": "sofp_prepayments",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Prepayments",
+       "kind": "input",
+       "correctValue": 600,
+       "marks": 1,
+       "workingHint": "Note 2"
+      },
+      {
+       "id": "sofp_cash",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Cash and cash equivalents",
+       "kind": "input",
+       "correctValue": 12000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_total_assets",
+       "statement": "SOFP",
+       "group": "Totals",
+       "label": "Total assets",
+       "kind": "subtotal",
+       "correctValue": 63480,
+       "marks": 1,
+       "workingHint": "Sum of all assets above",
+       "formula": [
+        {
+         "lineId": "sofp_ppe",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_inventory",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_receivables",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_prepayments",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_cash",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_capital_bf",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Capital b/f",
+       "kind": "input",
+       "correctValue": 44500,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_profit_for_year",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Profit for the year",
+       "kind": "subtotal",
+       "correctValue": 19230,
+       "marks": 1,
+       "workingHint": "As per the Statement of Profit or Loss",
+       "formula": [
+        {
+         "lineId": "spl_profit_for_year",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_drawings",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Drawings",
+       "kind": "input",
+       "correctValue": 18500,
+       "marks": 1,
+       "deduction": true,
+       "workingHint": "18,000 cash drawings + 500 goods taken for own use (note 6)"
+      },
+      {
+       "id": "sofp_capital_cf",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Capital c/f",
+       "kind": "subtotal",
+       "correctValue": 45230,
+       "marks": 1,
+       "workingHint": "Capital b/f + profit for the year - drawings",
+       "formula": [
+        {
+         "lineId": "sofp_capital_bf",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_profit_for_year",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_drawings",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "sofp_loan",
+       "statement": "SOFP",
+       "group": "Non-current liabilities",
+       "label": "10% business loan",
+       "kind": "input",
+       "correctValue": 8000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_payables",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Trade payables",
+       "kind": "input",
+       "correctValue": 9500,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_accruals",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Accruals",
+       "kind": "input",
+       "correctValue": 750,
+       "marks": 1,
+       "workingHint": "350 fuel (note 3) + 400 loan interest (note 7)"
+      },
+      {
+       "id": "sofp_total_current_liabilities",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Total current liabilities",
+       "kind": "subtotal",
+       "correctValue": 10250,
+       "marks": 1,
+       "workingHint": "Payables + accruals",
+       "formula": [
+        {
+         "lineId": "sofp_payables",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_accruals",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_total_equity_and_liabilities",
+       "statement": "SOFP",
+       "group": "Totals",
+       "label": "Total equity and liabilities",
+       "kind": "subtotal",
+       "correctValue": 63480,
+       "marks": 1,
+       "workingHint": "Capital c/f + loan + total current liabilities",
+       "formula": [
+        {
+         "lineId": "sofp_capital_cf",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_loan",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_total_current_liabilities",
+         "op": "+"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "FS5",
+     "t": "fs",
+     "section": "DE",
+     "q": "<b>Nova Tech Co</b> - prepare the full Statement of Profit or Loss and Statement of Financial Position from the trial balance and notes below. Enter every figure, including subtotals and totals.",
+     "a": null,
+     "ex": "Key workings: <b>Depreciation</b> = 25% straight-line x 110,000 = 27,500. <b>Amortisation</b> of the intangible asset = 11,000 (given). <b>Share issue</b> (note 6, not yet recorded): 20,000 shares x $1.40 = $28,000 cash in; $20,000 to share capital (nominal) and $8,000 to share premium. <b>Cash</b>: the $12,000 overdraft per the trial balance becomes a $16,000 positive balance once the $28,000 share issue proceeds are included. <b>Retained earnings</b> = 38,000 b/f + 1,400 profit for the year - 15,000 dividends paid = 24,400. Profit is thin this year mainly because of the combined 27,500 depreciation and 11,000 amortisation charges. The statement balances at $146,600.",
+     "topic": "Financial statements",
+     "subtopic": "Full financial statements (company) - intangibles & share issue",
+     "difficulty": "hard",
+     "source": "ai-generated",
+     "entityType": "company",
+     "yearEndDate": "31 December 20X6",
+     "scenario": "Nova Tech Co is a limited company. Prepare its financial statements for the year ended 31 December 20X6.",
+     "tolerance": 0,
+     "trialBalance": [
+      {
+       "account": "Purchases",
+       "debit": 150000,
+       "credit": null
+      },
+      {
+       "account": "Inventory at 1 January 20X6",
+       "debit": 10000,
+       "credit": null
+      },
+      {
+       "account": "Distribution costs",
+       "debit": 16000,
+       "credit": null
+      },
+      {
+       "account": "Administrative expenses",
+       "debit": 40000,
+       "credit": null
+      },
+      {
+       "account": "Trade receivables",
+       "debit": 32000,
+       "credit": null
+      },
+      {
+       "account": "Property, plant and equipment - cost",
+       "debit": 110000,
+       "credit": null
+      },
+      {
+       "account": "Intangible asset (software licence) - cost",
+       "debit": 55000,
+       "credit": null
+      },
+      {
+       "account": "Dividends paid",
+       "debit": 15000,
+       "credit": null
+      },
+      {
+       "account": "Revenue",
+       "debit": null,
+       "credit": 250000
+      },
+      {
+       "account": "$1 ordinary share capital",
+       "debit": null,
+       "credit": 60000
+      },
+      {
+       "account": "Share premium",
+       "debit": null,
+       "credit": 5000
+      },
+      {
+       "account": "Retained earnings at 1 January 20X6",
+       "debit": null,
+       "credit": 38000
+      },
+      {
+       "account": "Trade payables",
+       "debit": null,
+       "credit": 20000
+      },
+      {
+       "account": "PPE - accumulated depreciation at 1 January 20X6",
+       "debit": null,
+       "credit": 27000
+      },
+      {
+       "account": "Intangible asset - accumulated amortisation at 1 January 20X6",
+       "debit": null,
+       "credit": 16000
+      },
+      {
+       "account": "Bank overdraft",
+       "debit": null,
+       "credit": 12000
+      }
+     ],
+     "adjustmentNotes": [
+      {
+       "ref": 1,
+       "text": "Closing inventory at 31 December 20X6 was valued at cost of $13,500."
+      },
+      {
+       "ref": 2,
+       "text": "Administrative expenses include a prepayment of $1,600 for insurance relating to 20X7."
+      },
+      {
+       "ref": 3,
+       "text": "Distribution costs do not yet include an accrual of $700 for delivery costs."
+      },
+      {
+       "ref": 4,
+       "text": "Property, plant and equipment is depreciated at 25% per annum straight-line on cost, charged to administrative expenses."
+      },
+      {
+       "ref": 5,
+       "text": "The intangible asset is amortised at $11,000 per annum, charged to administrative expenses."
+      },
+      {
+       "ref": 6,
+       "text": "On 1 October 20X6 the company issued 20,000 $1 ordinary shares at $1.40 each for cash in full. No entry has yet been made for this transaction."
+      },
+      {
+       "ref": 7,
+       "text": "Income tax for the year is estimated at $8,500."
+      }
+     ],
+     "lines": [
+      {
+       "id": "spl_revenue",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Revenue",
+       "kind": "input",
+       "correctValue": 250000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "spl_cos",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Cost of sales",
+       "kind": "input",
+       "correctValue": 146500,
+       "marks": 2,
+       "deduction": true,
+       "workingHint": "Opening 10,000 + Purchases 150,000 - Closing 13,500 (note 1)"
+      },
+      {
+       "id": "spl_gross_profit",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Gross profit",
+       "kind": "subtotal",
+       "correctValue": 103500,
+       "marks": 1,
+       "workingHint": "Revenue - Cost of sales",
+       "formula": [
+        {
+         "lineId": "spl_revenue",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_cos",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "spl_distribution",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Distribution costs",
+       "kind": "input",
+       "correctValue": 16700,
+       "marks": 1,
+       "deduction": true,
+       "workingHint": "16,000 + 700 accrual (note 3)"
+      },
+      {
+       "id": "spl_admin",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Administrative expenses",
+       "kind": "input",
+       "correctValue": 76900,
+       "marks": 2,
+       "deduction": true,
+       "workingHint": "40,000 - 1,600 prepayment (note 2) + 27,500 depreciation (note 4) + 11,000 amortisation (note 5)"
+      },
+      {
+       "id": "spl_operating_profit",
+       "statement": "SPL",
+       "group": "Operating",
+       "label": "Operating profit",
+       "kind": "subtotal",
+       "correctValue": 9900,
+       "marks": 1,
+       "workingHint": "Gross profit - distribution - admin",
+       "formula": [
+        {
+         "lineId": "spl_gross_profit",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_distribution",
+         "op": "-"
+        },
+        {
+         "lineId": "spl_admin",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "spl_pbt",
+       "statement": "SPL",
+       "group": "Investing & financing",
+       "label": "Profit before income tax",
+       "kind": "subtotal",
+       "correctValue": 9900,
+       "marks": 1,
+       "workingHint": "Equal to operating profit - no investment income or finance costs this year",
+       "formula": [
+        {
+         "lineId": "spl_operating_profit",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "spl_tax",
+       "statement": "SPL",
+       "group": "Tax",
+       "label": "Income tax expense",
+       "kind": "input",
+       "correctValue": 8500,
+       "marks": 1,
+       "deduction": true,
+       "workingHint": "Note 7"
+      },
+      {
+       "id": "spl_profit_for_year",
+       "statement": "SPL",
+       "group": "Tax",
+       "label": "Profit for the year",
+       "kind": "subtotal",
+       "correctValue": 1400,
+       "marks": 1,
+       "workingHint": "Profit before tax - income tax",
+       "formula": [
+        {
+         "lineId": "spl_pbt",
+         "op": "+"
+        },
+        {
+         "lineId": "spl_tax",
+         "op": "-"
+        }
+       ]
+      },
+      {
+       "id": "sofp_ppe",
+       "statement": "SOFP",
+       "group": "Non-current assets",
+       "label": "Property, plant and equipment",
+       "kind": "input",
+       "correctValue": 55500,
+       "marks": 2,
+       "workingHint": "110,000 cost - (27,000 + 27,500) accumulated depreciation"
+      },
+      {
+       "id": "sofp_intangible",
+       "statement": "SOFP",
+       "group": "Non-current assets",
+       "label": "Intangible assets",
+       "kind": "input",
+       "correctValue": 28000,
+       "marks": 2,
+       "workingHint": "55,000 cost - (16,000 + 11,000) accumulated amortisation"
+      },
+      {
+       "id": "sofp_inventory",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Inventories",
+       "kind": "input",
+       "correctValue": 13500,
+       "marks": 1,
+       "workingHint": "Closing inventory (note 1)"
+      },
+      {
+       "id": "sofp_receivables",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Trade receivables",
+       "kind": "input",
+       "correctValue": 32000,
+       "marks": 1,
+       "workingHint": "Per trial balance - no adjustment needed"
+      },
+      {
+       "id": "sofp_prepayments",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Prepayments",
+       "kind": "input",
+       "correctValue": 1600,
+       "marks": 1,
+       "workingHint": "Note 2"
+      },
+      {
+       "id": "sofp_cash",
+       "statement": "SOFP",
+       "group": "Current assets",
+       "label": "Cash and cash equivalents",
+       "kind": "input",
+       "correctValue": 16000,
+       "marks": 2,
+       "workingHint": "12,000 overdraft (per trial balance) more than offset by 28,000 cash from the share issue (note 6: 20,000 x $1.40) = 16,000 net positive"
+      },
+      {
+       "id": "sofp_total_assets",
+       "statement": "SOFP",
+       "group": "Totals",
+       "label": "Total assets",
+       "kind": "subtotal",
+       "correctValue": 146600,
+       "marks": 1,
+       "workingHint": "Sum of all assets above",
+       "formula": [
+        {
+         "lineId": "sofp_ppe",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_intangible",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_inventory",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_receivables",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_prepayments",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_cash",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_share_capital",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Share capital",
+       "kind": "input",
+       "correctValue": 80000,
+       "marks": 1,
+       "workingHint": "60,000 b/f + 20,000 nominal value of shares issued (note 6: 20,000 x $1)"
+      },
+      {
+       "id": "sofp_share_premium",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Share premium",
+       "kind": "input",
+       "correctValue": 13000,
+       "marks": 1,
+       "workingHint": "5,000 b/f + 8,000 premium on the share issue (note 6: 20,000 x ($1.40 - $1))"
+      },
+      {
+       "id": "sofp_retained_earnings",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Retained earnings",
+       "kind": "input",
+       "correctValue": 24400,
+       "marks": 2,
+       "workingHint": "38,000 b/f + 1,400 profit for the year - 15,000 dividends paid"
+      },
+      {
+       "id": "sofp_total_equity",
+       "statement": "SOFP",
+       "group": "Equity",
+       "label": "Total equity",
+       "kind": "subtotal",
+       "correctValue": 117400,
+       "marks": 1,
+       "workingHint": "Share capital + share premium + retained earnings",
+       "formula": [
+        {
+         "lineId": "sofp_share_capital",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_share_premium",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_retained_earnings",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_payables",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Trade payables",
+       "kind": "input",
+       "correctValue": 20000,
+       "marks": 1,
+       "workingHint": "Per trial balance"
+      },
+      {
+       "id": "sofp_accruals",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Accruals",
+       "kind": "input",
+       "correctValue": 700,
+       "marks": 1,
+       "workingHint": "Note 3"
+      },
+      {
+       "id": "sofp_tax_payable",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Tax payable",
+       "kind": "input",
+       "correctValue": 8500,
+       "marks": 1,
+       "workingHint": "Note 7"
+      },
+      {
+       "id": "sofp_total_current_liabilities",
+       "statement": "SOFP",
+       "group": "Current liabilities",
+       "label": "Total current liabilities",
+       "kind": "subtotal",
+       "correctValue": 29200,
+       "marks": 1,
+       "workingHint": "Payables + accruals + tax payable",
+       "formula": [
+        {
+         "lineId": "sofp_payables",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_accruals",
+         "op": "+"
+        },
+        {
+         "lineId": "sofp_tax_payable",
+         "op": "+"
+        }
+       ]
+      },
+      {
+       "id": "sofp_total_equity_and_liabilities",
+       "statement": "SOFP",
+       "group": "Totals",
+       "label": "Total equity and liabilities",
+       "kind": "subtotal",
+       "correctValue": 146600,
+       "marks": 1,
+       "workingHint": "Total equity + total current liabilities (no non-current liabilities)",
+       "formula": [
+        {
+         "lineId": "sofp_total_equity",
          "op": "+"
         },
         {
