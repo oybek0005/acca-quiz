@@ -108,7 +108,7 @@ export function QuizResults({ results, questions, mode, onRetry, onDashboard, on
             return (
               <div key={section} className="flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 rounded" style={{ backgroundColor: `hsl(${['DE','INV','NCA','INT','TAX','ACC','RPP','CAP'].indexOf(section) * 45}, 70%, 50%)` }} />
+                  <div className="w-3 h-3 rounded" style={{ backgroundColor: `hsl(${['DE','INV','NCA','INT','TAX','ACC','RPP','CAP','REC','CFS'].indexOf(section) * 36}, 70%, 50%)` }} />
                   <span className="font-medium text-gray-900 dark:text-gray-100">{section}</span>
                 </div>
                 <div className="flex items-center gap-4">

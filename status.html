@@ -535,6 +535,26 @@
       advice: "Yangi savol turi tayyor va jonli. Savol qo'shish namunasi: sample-fs-question.json (alohida fayl, Import orqali yuklanadi) yoki src/data/questions.json ichidagi FS1. Format tafsilotlari — QUESTIONS_GUIDE.md ning 6-bo'limida. Tekshirish: (1) har subtotal formula = correctValue, (2) Total assets = Total equity and liabilities, (3) qatorlar tartibi.",
       note: "v1 cheklovi: umumiy quiz foizida bu savol bitta element sifatida sanaladi (50%+ = to'g'ri); batafsil X/29 ball savol ichida va review'da.",
     },
+    {
+      pct: 100,
+      date: "2026-09-01",
+      phaseId: "FS+GIT",
+      phaseName: "4 ta yangi FS savoli + git commit",
+      statuses: ["done","done","done","done","done","done","done","done","done","done"],
+      done: [
+        "FS2–FS5 qo'shildi (Bluebird, Horizon, Karim sole-trader, Nova Tech) — bank endi 346 savol",
+        "Har biri tekshirildi: barcha subtotal formulalar correctValue ga to'g'ri keladi, hisobotlar balanslashadi, qator tartibi to'g'ri",
+        "Jonli sinov: FS5 → 31/31 ball, 25/25 qator; konsol toza; qayta deploy qilindi",
+        "Butun loyiha git'ga commit qilindi (3c330f0), FS savollari alohida (b8632ad)",
+        "firebase.txt + vaqtinchalik fayllar .gitignore ga qo'shildi — commitga tushmagani tasdiqlandi",
+      ],
+      remaining: [
+        "Ixtiyoriy: remote (GitHub) qo'shib push qilish — firebase.txt allaqachon ignore'da, xavfsiz",
+        "Ixtiyoriy: SettingsView'ni yangi dizayn tizimiga to'liq o'tkazish",
+      ],
+      advice: "Loyiha to'liq: 346 savol (5 tasi to'liq moliyaviy hisobot), Firebase sync, jonli deploy, git'da. Yangi FS savollari sofp-spl-question-type-prompt.md + sample-fs-question.json ni AI ga berib yozdirsangiz bo'ladi — QUESTIONS_GUIDE.md §6 tekshirish ro'yxatiga amal qiling.",
+      note: "Barcha so'ralgan ishlar bajarildi va commit qilindi.",
+    },
   ];
 
   // ============ RENDER ============

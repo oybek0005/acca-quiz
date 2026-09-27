@@ -2,8 +2,8 @@
  "meta": {
   "generated": "2026-08-27",
   "version": 1,
-  "totalQuestions": 346,
-  "updated": "2026-09-01"
+  "totalQuestions": 438,
+  "updated": "2026-09-15"
  },
  "sections": {
   "DE": {
@@ -7942,6 +7942,1589 @@
      "source": "mid"
     }
    ]
+  },
+  "REC": {
+   "code": "REC",
+   "name": "Reconciliations",
+   "uz": "Solishtirish (bank, ta'minotchi, control hisoblar)",
+   "questions": [
+    {
+     "id": "REC01",
+     "t": "mcq",
+     "q": "What is the main purpose of a bank reconciliation?",
+     "opt": [
+      "To calculate the profit for the period from cash movements",
+      "To agree the bank ledger account in the general ledger with the balance on the bank statement",
+      "To update the receivables ledger control account for cash receipts",
+      "To replace the cash book as the primary record of bank transactions"
+     ],
+     "a": 1,
+     "ex": "A bank reconciliation compares the <b>bank ledger account</b> (cash book) with the <b>bank statement</b>. Differences are either unrecorded items (entered in the cash book) or timing differences (shown on the reconciliation). It does not measure profit, and it does not replace the cash book.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Purpose of bank rec",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC02",
+     "t": "tf",
+     "q": "True or False: When reconciling a favourable (credit) bank statement balance to the cash book, unpresented cheques are deducted from the statement balance.",
+     "opt": null,
+     "a": true,
+     "ex": "<b>True.</b> Unpresented cheques have already been credited in the cash book but have not yet cleared the bank. Deducting them from a favourable statement balance brings the statement into line with the cash book. (If the statement shows an overdraft, unpresented cheques <i>increase</i> the overdraft.)",
+     "topic": "Bank reconciliation",
+     "subtopic": "Unpresented cheques",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC03",
+     "t": "mcq",
+     "q": "The bank has credited another customer's deposit of $210 to Ashvale's account in error. How is this error treated in Ashvale's bank reconciliation?",
+     "opt": [
+      "Debit the bank ledger account with $210",
+      "Credit the bank ledger account with $210",
+      "Adjust the bank statement side of the reconciliation only — do not amend the cash book",
+      "Debit receivables and credit the bank ledger account"
+     ],
+     "a": 2,
+     "ex": "A <b>bank error</b> is the bank's mistake, not Ashvale's. The cash book is already correct, so no ledger entry is made. The error is adjusted on the <b>statement side</b> of the reconciliation (here, deduct the $210 that does not belong to Ashvale).",
+     "topic": "Bank reconciliation",
+     "subtopic": "Bank errors",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC04",
+     "t": "mcq",
+     "q": "From the bank's point of view, an overdraft on a customer's current account is shown on the bank statement as:",
+     "opt": [
+      "A credit balance (the customer is owed money by the bank)",
+      "A debit balance (the customer owes money to the bank)",
+      "A memorandum note that does not appear as a debit or credit",
+      "A credit balance in the customer's cash book and a credit on the statement"
+     ],
+     "a": 1,
+     "ex": "The bank statement is written from the <b>bank's</b> perspective. An overdraft is an asset to the bank (money owed by the customer), so it is a <b>debit</b> on the statement. In the customer's cash book the same overdraft is a <b>credit</b> balance.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Overdraft presentation",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC05",
+     "t": "multi",
+     "q": "Which TWO of the following are timing differences when reconciling the bank ledger account to the bank statement (already recorded in the cash book, not yet cleared by the bank)?",
+     "opt": [
+      "Unpresented cheques",
+      "Bank charges shown on the statement but not yet in the cash book",
+      "Uncleared lodgements (deposits not yet credited by the bank)",
+      "A standing order on the statement that has not been entered in the cash book"
+     ],
+     "a": [
+      0,
+      2
+     ],
+     "ex": "Timing differences are items <b>already in the cash book</b> that the bank has not yet processed: unpresented cheques and uncleared lodgements. Bank charges and standing orders appearing first on the statement are <b>unrecorded differences</b> — they must be entered in the cash book.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Timing vs unrecorded differences",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC06",
+     "t": "numeric",
+     "q": "Kestrel's bank ledger account shows a debit balance of $4,820 (cash at bank). Unpresented cheques total $610 and uncleared lodgements total $340. There are no other differences. What is the balance on the bank statement? $ (credit / cash at bank)",
+     "opt": null,
+     "a": 5090,
+     "ex": "Working from the cash book to the statement:<br>Cash book (Dr) $4,820<br>Add back unpresented cheques $610 (in the cash book, not yet on the statement)<br>Deduct uncleared lodgements $340 (in the cash book, not yet on the statement)<br>= Statement $4,820 + $610 − $340 = <b>$5,090 credit</b>.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Simple timing differences",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC07",
+     "t": "numeric",
+     "q": "Brine Co's bank statement shows a credit balance of $2,150. Unpresented cheques are $480 and lodgements not yet credited are $220. Bank charges of $35 appear on the statement but have not been entered in the cash book. What figure for cash at bank should appear in the statement of financial position? $",
+     "opt": null,
+     "a": 1890,
+     "ex": "The SOFP reports the <b>adjusted cash book</b>, which equals the statement after timing differences (charges are already on the statement):<br>Statement $2,150 − unpresented $480 + outstanding lodgements $220 = <b>$1,890</b>.<br>The $35 charges will be credited in the cash book, bringing the unadjusted cash book down to this same $1,890.",
+     "topic": "Bank reconciliation",
+     "subtopic": "SOFP cash figure",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC08",
+     "t": "mcq",
+     "q": "A cheque of $270 received from a credit customer was entered in the bank ledger account and later dishonoured. What is the correcting entry in the bank ledger account?",
+     "opt": [
+      "Debit bank $270",
+      "Credit bank $270",
+      "Debit bank $540",
+      "Credit receivables $270 only, with no bank entry"
+     ],
+     "a": 1,
+     "ex": "The original receipt was <b>debited</b> to bank. A dishonoured cheque reverses that entry: <b>credit bank, debit receivables</b> (reinstating the debt). Crediting bank $540 would be a wrong-side correction of twice the amount; omitting the bank entry leaves cash overstated.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Dishonoured cheques",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC09",
+     "t": "numeric",
+     "q": "Dunwick's bank ledger account shows a balance of $3,240 overdrawn. It is then discovered that a standing order of $80 has been entered twice, and that a dishonoured cheque of $160 has been debited in the bank ledger account instead of credited. What is the correct overdraft? $",
+     "opt": null,
+     "a": 3480,
+     "ex": "Standing order entered twice: reverse the extra $80 (debit bank) → overdraft falls by $80.<br>Dishonoured cheque on the wrong side: it should have been credited $160 but was debited $160, so the account is $320 too high (overdraft $320 too low). Credit $320.<br>Correct overdraft = $3,240 − $80 + $320 = <b>$3,480</b>.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Cash book errors",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC10",
+     "t": "numeric",
+     "q": "Fenwick Traders' bank ledger account shows a debit balance of $6,400. Comparison with the bank statement reveals: unpresented cheques $1,150; receipts not yet credited by the bank $720; bank charges $90 not in the ledger; a dishonoured cheque $210 not in the ledger. What is the correct bank ledger account balance to be reported as cash at bank? $",
+     "opt": null,
+     "a": 6100,
+     "ex": "Only <b>unrecorded differences</b> amend the cash book. Timing items (unpresented cheques and outstanding lodgements) stay on the face of the reconciliation.<br>Draft debit $6,400 − charges $90 − dishonoured cheque $210 = <b>$6,100</b>.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Adjusting the cash book",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC11",
+     "t": "mcq",
+     "q": "An inexperienced bookkeeper prepared this bank reconciliation at 31 March 20X7:<br><br>Balance per bank statement (overdrawn) $12,400<br>Add: lodgements not credited $6,800<br>Less: unpresented cheques $4,100<br>Balance per cash book $15,100<br><br>What should the cash book overdraft be after the items are treated correctly?",
+     "opt": [
+      "$15,100 overdrawn",
+      "$9,700 overdrawn",
+      "$2,500 cash at bank",
+      "$21,500 overdrawn"
+     ],
+     "a": 1,
+     "ex": "An overdraft on the statement is increased by unpresented cheques and reduced by outstanding lodgements:<br>$12,400 + $4,100 − $6,800 = <b>$9,700 overdrawn</b>.<br>The junior added lodgements to an overdraft and deducted unpresented cheques — both the wrong direction.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Overdraft rec workings",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC12",
+     "t": "multi",
+     "q": "Which of the following are unrecorded differences that must be entered in the cash book as part of a bank reconciliation? Select ALL that apply.",
+     "opt": [
+      "Bank charges on the statement",
+      "Unpresented cheques",
+      "A direct debit for insurance appearing on the statement",
+      "Interest credited by the bank",
+      "Uncleared lodgements",
+      "A cheque previously banked that the bank has now dishonoured"
+     ],
+     "a": [
+      0,
+      2,
+      3,
+      5
+     ],
+     "ex": "Unrecorded differences are items the business learns of from the statement: charges, direct debits, standing orders, bank interest, BACS receipts and dishonoured cheques. Unpresented cheques and uncleared lodgements are <b>timing differences</b> already in the cash book.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Timing vs unrecorded differences",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC13",
+     "t": "tf",
+     "q": "True or False: A credit balance on the bank ledger account in the general ledger means the business has cash at bank.",
+     "opt": null,
+     "a": false,
+     "ex": "<b>False.</b> In the cash book, money in is debited and money out is credited. A <b>credit</b> balance is therefore an <b>overdraft</b>. Cash at bank is a debit balance.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Cash book balances",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC14",
+     "t": "mcq",
+     "q": "A standing order of $145 for rent appears on the bank statement but has not been recorded in the cash book. What is the correcting journal?",
+     "opt": [
+      "Dr Bank $145, Cr Rent $145",
+      "Dr Rent $145, Cr Bank $145",
+      "Dr Rent $145, Cr Payables $145",
+      "Dr Drawings $145, Cr Bank $145"
+     ],
+     "a": 1,
+     "ex": "Rent is an expense (debit) and cash at bank falls (credit the bank ledger). Debiting the bank would increase cash — the opposite of a standing-order payment.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Unrecorded standing orders",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC15",
+     "t": "tf",
+     "q": "True or False: An uncleared lodgement is an unrecorded difference that must be entered in the cash book when the bank reconciliation is prepared.",
+     "opt": null,
+     "a": false,
+     "ex": "<b>False.</b> An uncleared lodgement has <b>already</b> been debited in the cash book; the bank has simply not credited it yet. It is a timing difference on the reconciliation, not a cash-book entry.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Timing vs unrecorded differences",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC16",
+     "t": "numeric",
+     "q": "Osprey's bank statement shows an overdraft of $890. Unpresented cheques are $1,260 and lodgements not yet credited are $540. The bank has accidentally debited Osprey with a $75 cheque belonging to another customer. Bank charges of $40 are on the statement but not in the cash book. What overdraft should be reported in the statement of financial position? $",
+     "opt": null,
+     "a": 1535,
+     "ex": "Start from the statement overdraft and adjust for the bank error and timing items (charges are already on the statement):<br>Statement overdraft $890 − bank error $75 = $815<br>+ unpresented cheques $1,260 − outstanding lodgements $540 = <b>$1,535 overdrawn</b>.<br>That is the adjusted cash book / SOFP figure.",
+     "topic": "Bank reconciliation",
+     "subtopic": "SOFP cash figure",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC17",
+     "t": "numeric",
+     "q": "Lumen's bank ledger account had an opening credit balance of $320 (overdraft). During the week: cash sales $2,100 (including sales tax of $300); receipts from credit customers $1,680; payments to suppliers of $1,250 less 4% cash discount; dishonoured cheques from customers $95. What is the closing debit balance on the bank ledger account? $",
+     "opt": null,
+     "a": 2165,
+     "ex": "Bank payments to suppliers are 96% × $1,250 = $1,200 (the $50 discount does not go through the bank). Sales tax is included in the cash that actually hit the bank, so debit $2,100, not $1,800.<br>Dr: sales $2,100 + receipts $1,680 = $3,780<br>Cr: opening overdraft $320 + payments $1,200 + dishonoured $95 = $1,615<br>Closing debit = $3,780 − $1,615 = <b>$2,165</b>.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Updating the cash book",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC18",
+     "t": "numeric",
+     "q": "Harborough's bank ledger account shows a credit balance of $1,080 (overdraft). Unpresented cheques are $390 and a lodgement of $125 has not yet been credited by the bank. Bank charges of $60 are on the statement but not in the cash book. What overdraft appears on the bank statement? $",
+     "opt": null,
+     "a": 875,
+     "ex": "Adjusted cash-book overdraft = $1,080 + charges $60 = $1,140.<br>Statement overdraft + unpresented $390 − outstanding lodgement $125 = $1,140<br>⇒ statement overdraft = $1,140 − $390 + $125 = <b>$875</b>.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Reconstructing the statement",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC19",
+     "t": "mcq",
+     "q": "Who issues a statement of account, and why?",
+     "opt": [
+      "A customer issues it to a supplier to show how much the customer still owes",
+      "A supplier issues it to a credit customer to show how much the customer owes the supplier",
+      "The bank issues it to explain why the cash book is wrong",
+      "A business issues it to all cash customers listing purchases in the month"
+     ],
+     "a": 1,
+     "ex": "A <b>statement of account</b> is sent by a credit supplier to each credit customer, listing invoices, credits, receipts and the closing amount owed. It is not issued by the customer, and it is not a bank document.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Statement of account",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC20",
+     "t": "tf",
+     "q": "True or False: The balance on a supplier's statement of account will always equal the balance on the customer's payables ledger account for that supplier.",
+     "opt": null,
+     "a": false,
+     "ex": "<b>False.</b> Timing differences (cash in transit, goods in transit, returns not yet recorded) and errors mean the two balances often differ. They are <b>reconciled</b>, not assumed equal.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Why balances differ",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC21",
+     "t": "mcq",
+     "q": "Plover Co's supplier statement shows $8,400 due. Plover's payables ledger account for that supplier shows $7,150. The whole difference is a payment Plover has sent that the supplier has not yet recorded. The reconciling item is:",
+     "opt": [
+      "Cash in transit of $1,250",
+      "Goods in transit of $1,250",
+      "A contra of $15,550",
+      "A settlement discount of $7,150"
+     ],
+     "a": 0,
+     "ex": "$8,400 − $7,150 = <b>$1,250</b>. A payment recorded by Plover but not yet by the supplier is <b>cash in transit</b> — deducted from the statement to agree with Plover's ledger. Goods in transit would be an invoice, not a payment.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Cash in transit",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC22",
+     "t": "numeric",
+     "q": "The payables ledger account of Helix maintained by Marlowe Co shows $5,620. Marlowe returned goods of $340 which Helix has not yet recorded. Helix has issued an invoice of $180 which Marlowe has not yet recorded. What balance appears on Helix's statement of account? $",
+     "opt": null,
+     "a": 6140,
+     "ex": "Marlowe's ledger after recording the missing invoice: $5,620 + $180 = $5,800.<br>Helix's statement does not yet include the returns, so it is $340 higher:<br>$5,800 + $340 = <b>$6,140</b>.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Returns and omitted invoices",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC23",
+     "t": "numeric",
+     "q": "A supplier's statement shows $9,870 due. Sable Co has recorded a contra of $1,200 which the supplier has not recorded, and has not yet recorded an invoice of $450 that is on the statement. What is the current balance on Sable Co's payables ledger account for this supplier? $",
+     "opt": null,
+     "a": 8220,
+     "ex": "Adjusted statement (after the contra the supplier will record) = $9,870 − $1,200 = $8,670.<br>Sable has not yet posted the $450 invoice, so Sable's <b>current</b> ledger = $8,670 − $450 = <b>$8,220</b>.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Contras and omitted invoices",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC24",
+     "t": "mcq",
+     "q": "Vale Co recorded settlement discount received of $40, but the supplier has disallowed it for late payment. What general-ledger entries correct this?",
+     "opt": [
+      "Dr Discount received $40, Cr Payables $40",
+      "Dr Payables $40, Cr Discount received $40",
+      "Dr Discount allowed $40, Cr Receivables $40",
+      "Dr Payables $40, Cr Bank $40"
+     ],
+     "a": 0,
+     "ex": "The discount previously credited to income must be reversed (<b>debit discount received</b>) and the liability put back (<b>credit payables</b>). Individual supplier accounts are memorandum records — the double entry is in the general ledger control account.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Disallowed settlement discount",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC25",
+     "t": "mcq",
+     "q": "An invoice from supplier Oak was posted to the personal account of supplier Elm. The general ledger payables control is correct. How is the error corrected in the purchase ledger?",
+     "opt": [
+      "Debit Elm, Credit Oak",
+      "Debit Oak, Credit Elm",
+      "Debit Purchases, Credit Payables",
+      "Debit Payables, Credit Purchases"
+     ],
+     "a": 0,
+     "ex": "Elm was wrongly credited, so <b>debit Elm</b> to clear it. Oak should have been credited, so <b>credit Oak</b>. There is no general-ledger error (error of commission within the memorandum purchase ledger), so purchases and the control account are left alone.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Error of commission",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC26",
+     "t": "numeric",
+     "q": "A supplier's statement shows $4,620. Reed Co's payables ledger for that supplier shows $890. Differences: a cheque of $410 sent by Reed not on the statement; returns of $155 not on the statement; a contra of $3,050 recorded by Reed but not by the supplier. After adjusting for these items, what unreconciled difference remains? $",
+     "opt": null,
+     "a": 115,
+     "ex": "Statement $4,620 − cheque $410 − returns $155 − contra $3,050 = $1,005.<br>Reed's ledger $890.<br>Remaining difference = $1,005 − $890 = <b>$115</b>.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Unreconciled difference",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC27",
+     "t": "numeric",
+     "q": "Cinder Co's payables ledger account for Nova shows $3,480. Cinder recorded a payment of $620 together with discount received of $30, neither of which is on Nova's statement. Cinder also returned goods of $95 not yet on the statement. Nova has issued an invoice of $210 that Cinder has not recorded. What is the balance on Nova's statement? $",
+     "opt": null,
+     "a": 4435,
+     "ex": "Cinder's ledger after the missing invoice: $3,480 + $210 = $3,690.<br>Items on Cinder's books but not on the statement (payment + discount $650, returns $95) must still be on the statement:<br>$3,690 + $650 + $95 = <b>$4,435</b>.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Reconstructing the statement",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC28",
+     "t": "mcq",
+     "q": "A supplier's statement shows $11,200. Gable Co's records show $11,350 owed to that supplier. Which of the following could explain the $150 difference in full?",
+     "opt": [
+      "Gable has paid $150 which the supplier has not yet recorded",
+      "Gable has returned goods of $150 which the supplier has not yet recorded",
+      "The supplier has allowed Gable $150 settlement discount which Gable has not yet recorded",
+      "The supplier has issued an invoice of $150 which Gable has not yet received"
+     ],
+     "a": 2,
+     "ex": "Gable's books are <b>$150 higher</b> than the statement. A discount the supplier has allowed but Gable has not recorded reduces the statement (and should reduce Gable) — so it explains the gap. A payment or return recorded by Gable but not the supplier would make Gable's books <b>lower</b>. An unrecorded invoice would also make Gable's books lower than the statement.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Explaining a difference",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC29",
+     "t": "numeric",
+     "q": "Iota's statement to Quay Co shows $6,540. Quay made a payment of $980 that is not on the statement, and has not recorded an invoice of $365 that is on the statement. What is Quay Co's current payables ledger balance for Iota (before recording the invoice)? $",
+     "opt": null,
+     "a": 5195,
+     "ex": "Adjusted statement = $6,540 − payment $980 = $5,560.<br>Quay has not yet posted the $365 invoice, so the <b>current</b> ledger = $5,560 − $365 = <b>$5,195</b>.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Payment in transit and omitted invoice",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC30",
+     "t": "numeric",
+     "q": "Ancona Co's payables ledger for Tau shows $2,875. Ancona has not recorded a credit note of $64 issued by Tau. An invoice of $410 on Tau's statement relates to another customer and was included in error. What was the original balance on Tau's statement? $",
+     "opt": null,
+     "a": 3221,
+     "ex": "Ancona's ledger after the credit note: $2,875 − $64 = $2,811.<br>Tau's original statement included a $410 invoice that must be removed, so original statement = $2,811 + $410 = <b>$3,221</b>.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Statement errors",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC31",
+     "t": "mcq",
+     "q": "The receivables ledger control account is:",
+     "opt": [
+      "The total of cash sales for the period",
+      "A general-ledger account that should equal the sum of the individual customer balances in the sales ledger",
+      "A list of amounts owed to suppliers",
+      "A note to the statement of cash flows"
+     ],
+     "a": 1,
+     "ex": "A control account is a <b>general-ledger summary</b>. The receivables (sales ledger) control account total must equal the sum of the individual customer accounts in the memorandum sales ledger. It is not cash sales, and it is not payables.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Purpose of control accounts",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC32",
+     "t": "multi",
+     "q": "Which TWO of the following appear on the DEBIT side of the receivables ledger control account?",
+     "opt": [
+      "Credit sales for the period",
+      "Cash received from credit customers",
+      "Dishonoured cheques from credit customers",
+      "Settlement discounts allowed"
+     ],
+     "a": [
+      0,
+      2
+     ],
+     "ex": "Receivables <b>increase</b> (debit) with credit sales and with dishonoured cheques (the debt is put back). Cash received and discounts allowed <b>reduce</b> receivables and are credits.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Receivables control entries",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC33",
+     "t": "multi",
+     "q": "Which TWO of the following are CREDIT entries in the payables ledger control account?",
+     "opt": [
+      "Credit purchases for the period",
+      "A refund received from a supplier in respect of an earlier overpayment",
+      "Payments to suppliers",
+      "Settlement discounts received"
+     ],
+     "a": [
+      0,
+      1
+     ],
+     "ex": "Payables <b>increase</b> (credit) with credit purchases and with a cash refund of an overpayment (the liability is restored). Payments and discounts received <b>reduce</b> payables and are debits.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Payables control entries",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC34",
+     "t": "mcq",
+     "q": "A business agrees a contra of $800 with an entity that is both a customer and a supplier. What is the general-ledger entry?",
+     "opt": [
+      "Dr Receivables control $800, Cr Payables control $800",
+      "Dr Payables control $800, Cr Receivables control $800",
+      "Dr Bank $800, Cr Receivables control $800",
+      "Dr Payables control $800, Cr Bank $800"
+     ],
+     "a": 1,
+     "ex": "A contra offsets a receivable against a payable with the same party: <b>debit payables</b> (liability down) and <b>credit receivables</b> (asset down). Reversing the entry would increase both balances. No cash changes hands.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Contra entries",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC35",
+     "t": "numeric",
+     "q": "Receivables ledger control account: opening debit $18,400; credit sales $96,200; cash from credit customers $91,500; discounts allowed $1,240; irrecoverable debts written off $860; sales returns $2,100; contra $750; dishonoured cheques $420. What is the closing debit balance? $",
+     "opt": null,
+     "a": 18570,
+     "ex": "Debits: $18,400 + $96,200 + $420 = $115,020<br>Credits: $91,500 + $1,240 + $860 + $2,100 + $750 = $96,450<br>Closing debit = $115,020 − $96,450 = <b>$18,570</b>.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Receivables control reconstruction",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC36",
+     "t": "numeric",
+     "q": "Payables ledger control account: opening credit $12,600; credit purchases $54,800; payments to suppliers $51,200; discounts received $980; purchase returns $1,450; contra $750; refund received from a supplier $160. What is the closing credit balance? $",
+     "opt": null,
+     "a": 13180,
+     "ex": "Credits: $12,600 + $54,800 + $160 refund = $67,560<br>Debits: $51,200 + $980 + $1,450 + $750 = $54,380<br>Closing credit = $67,560 − $54,380 = <b>$13,180</b>.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Payables control reconstruction",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC37",
+     "t": "mcq",
+     "q": "The sales day book is undercast by $200. Individual customer invoices were posted correctly to the personal accounts. What is the effect?",
+     "opt": [
+      "Receivables control is $200 too low; the list of balances is correct",
+      "Receivables control is $200 too high; the list of balances is correct",
+      "Both the control account and the list of balances are $200 too low",
+      "The list of balances is $200 too low; the control account is correct"
+     ],
+     "a": 0,
+     "ex": "The day-book <b>total</b> is posted to the control account; each invoice is posted separately to the personal accounts. An undercast therefore understates the <b>control</b> only. The list of balances is unaffected.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Day-book casting errors",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC38",
+     "t": "multi",
+     "q": "In a receivables control account reconciliation, which items are adjusted on the CONTROL ACCOUNT (not on the list of personal-account balances)? Select ALL that apply.",
+     "opt": [
+      "The sales day book was overcast",
+      "Cash received was omitted from a customer's personal account (but recorded in the control)",
+      "An irrecoverable debt was written off in the control account but not in the personal account",
+      "Discount allowed was omitted from the control account (but recorded in the personal account)",
+      "A customer balance was omitted from the extracted list of balances"
+     ],
+     "a": [
+      0,
+      3
+     ],
+     "ex": "Casting errors in books of prime entry, and items omitted from or misposted to the <b>control</b>, are control adjustments. Errors in individual accounts, omitted list balances, and write-offs posted only to a personal account are adjustments to the <b>list</b>.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Control vs list adjustments",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC39",
+     "t": "numeric",
+     "q": "The receivables control account shows a debit balance of $14,860. Discount allowed of $120 was posted to the debit of the control (it should have been credited). Sales returns of $340 were omitted from the control. What is the corrected control balance? $",
+     "opt": null,
+     "a": 14280,
+     "ex": "Discount on the wrong side overstates the debit balance by 2 × $120 = $240. Returns omitted should have been credited $340.<br>$14,860 − $240 − $340 = <b>$14,280</b>.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Wrong-side postings",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC40",
+     "t": "numeric",
+     "q": "The extracted list of receivables balances totals $22,450. A debt of $675 was written off in the control account but not in the customer's personal account. A contra of $200 was recorded in both control accounts but only in the supplier's personal account, not the customer's. What is the corrected list total? $",
+     "opt": null,
+     "a": 21575,
+     "ex": "Both items are already in the control but missing from the list, so the list is too high:<br>$22,450 − write-off $675 − contra $200 = <b>$21,575</b>.",
+     "topic": "Control account reconciliation",
+     "subtopic": "List of balances adjustments",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC41",
+     "t": "tf",
+     "q": "True or False: A credit balance on an individual receivables ledger account usually means the customer has overpaid, or has been issued credit notes exceeding the amounts owed.",
+     "opt": null,
+     "a": true,
+     "ex": "<b>True.</b> Customer accounts are normally debit balances (they owe us). A credit balance is typically an overpayment or excess credit notes, and is presented as a current liability, not netted against other receivables, if material.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Credit balances in receivables",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC42",
+     "t": "manual",
+     "q": "Explain the two-stage process of preparing a bank reconciliation. Distinguish unrecorded differences from timing differences, and state which figure is reported as cash at bank (or overdraft) in the statement of financial position.",
+     "opt": null,
+     "a": null,
+     "ex": "<b>Stage 1 — update the cash book</b> for unrecorded differences discovered from the statement: bank charges, interest, standing orders, direct debits, BACS receipts, dishonoured cheques. These are journalised. Do <b>not</b> record bank errors in the cash book.<br><b>Stage 2 — reconcile</b> the adjusted cash book to the statement for timing differences: unpresented cheques (deduct from a favourable statement) and uncleared lodgements (add), plus any bank errors.<br>The SOFP figure is the <b>adjusted cash book</b>, not the raw statement balance.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Two-stage bank rec process",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC43",
+     "t": "mcq",
+     "q": "Cash of $500 received from a credit customer was debited to the bank ledger account and credited to the payables control account instead of the receivables control account. If the error is not corrected, what is the effect on net assets?",
+     "opt": [
+      "Net assets overstated by $500",
+      "Net assets understated by $500",
+      "Net assets overstated by $1,000",
+      "No effect on net assets"
+     ],
+     "a": 3,
+     "ex": "Correct entry: Dr Bank, Cr Receivables (asset swap — net assets unchanged).<br>Error: Dr Bank (asset +$500, correct) and Cr Payables (liability +$500). The receivable is not removed, so assets are also +$500 too high. Assets and liabilities are both overstated by $500, so <b>net assets are unchanged</b>.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Misposting between control accounts",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC44",
+     "t": "numeric",
+     "q": "The receivables control account balance is $9,720. Returns inwards of $185 were recorded in the customer's personal account but omitted from the control. Cash of $400 from a customer was credited in the control but not in the personal account. What is the corrected control account balance? $",
+     "opt": null,
+     "a": 9535,
+     "ex": "Only the omitted returns affect the control (credit $185). The $400 cash is already in the control; it is a list-of-balances adjustment.<br>$9,720 − $185 = <b>$9,535</b>.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Control vs list adjustments",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC45",
+     "t": "multi",
+     "q": "Which of the following would cause the receivables control account NOT to agree with the total of the list of customer balances? Select ALL that apply.",
+     "opt": [
+      "A sales invoice omitted from the sales day book entirely (so entered in neither the control nor the personal account)",
+      "The sales day book was overcast",
+      "Cash from a customer was posted to the wrong customer's personal account",
+      "An irrecoverable debt was written off in the personal account only",
+      "A contra was entered in both control accounts but in neither personal account"
+     ],
+     "a": [
+      1,
+      3,
+      4
+     ],
+     "ex": "An invoice omitted from the day book is missing from <b>both</b> records, so they still agree. Posting cash to the wrong customer is an error of commission: the list <b>total</b> is still correct. A day-book overcast, a write-off in only one record, and a contra in the controls only all create a difference.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Errors that do and do not cause disagreement",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC46",
+     "t": "numeric",
+     "q": "Wren's bank ledger account is $2,760 overdrawn before adjustments. Bank charges $85 and a dividend received $120 appear on the statement but not in the cash book. Unpresented cheques are $940 and lodgements not credited are $510. The bank has charged Wren with another customer's standing order of $60. What overdraft is shown on the bank statement? $",
+     "opt": null,
+     "a": 2355,
+     "ex": "Adjusted cash-book overdraft = $2,760 + charges $85 − dividend $120 = $2,725.<br>Adjusted OD = (statement OD − bank error $60) + unpresented $940 − lodgements $510<br>$2,725 = statement OD − $60 + $940 − $510 = statement OD + $370<br>Statement overdraft = $2,725 − $370 = <b>$2,355</b>.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Reconstructing the statement",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC47",
+     "t": "tf",
+     "q": "True or False: After a bank reconciliation is complete, the figure reported as cash at bank (or overdraft) in the statement of financial position is the adjusted cash book balance, not the unadjusted balance on the bank statement.",
+     "opt": null,
+     "a": true,
+     "ex": "<b>True.</b> The SOFP reports the entity's own records after they have been brought up to date. Timing differences mean the raw statement is not the reporting figure.",
+     "topic": "Bank reconciliation",
+     "subtopic": "SOFP cash figure",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC48",
+     "t": "mcq",
+     "q": "Which of the following is first recorded in the cash book when it is notified by the bank statement?",
+     "opt": [
+      "An unpresented cheque drawn yesterday",
+      "An uncleared lodgement paid in yesterday",
+      "Bank interest received",
+      "A cheque drawn on the business's account two days ago"
+     ],
+     "a": 2,
+     "ex": "Bank interest (like charges, standing orders and direct debits) is typically unknown until the statement arrives, so it is an unrecorded difference entered in the cash book. Unpresented cheques and uncleared lodgements are already in the cash book.",
+     "topic": "Bank reconciliation",
+     "subtopic": "Unrecorded differences",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC49",
+     "t": "numeric",
+     "q": "Extract from the payables control account for the year: opening credit $8,900; purchases $55,600; contra with receivables $2,100; bank $48,600; discount received $740; returns outwards $3,220; balance carried down $9,840. What liability is reported in the statement of financial position? $",
+     "opt": null,
+     "a": 9840,
+     "ex": "The SOFP payables figure is the <b>closing balance</b> on the control account — the $9,840 carried down — not the purchases total or the period's payments.",
+     "topic": "Control account reconciliation",
+     "subtopic": "SOFP payables figure",
+     "section": "REC",
+     "difficulty": "easy",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC50",
+     "t": "mcq",
+     "q": "A supplier's statement includes an invoice for goods that the customer has not yet recorded. In the supplier-statement reconciliation this item is normally adjusted by:",
+     "opt": [
+      "Deducting the invoice from the supplier statement",
+      "Adding the invoice to the customer's payables ledger account",
+      "Ignoring it, because goods in transit are never reconciling items",
+      "Debiting the bank ledger account"
+     ],
+     "a": 1,
+     "ex": "If the supplier has invoiced and the customer has not yet posted the purchase, the customer's ledger is too low. Add the invoice to the <b>customer's payables account</b> (and, if the goods are received or the invoice is valid, record the purchase in the general ledger). Do not rewrite the supplier's statement for the customer's omission.",
+     "topic": "Supplier statement reconciliation",
+     "subtopic": "Omitted invoices",
+     "section": "REC",
+     "difficulty": "medium",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC51",
+     "t": "numeric",
+     "q": "The receivables control account shows $27,500 debit. The sales day book was undercast by $420, and discount allowed of $95 was omitted from the control (it was recorded in the personal account). What is the corrected control account balance? $",
+     "opt": null,
+     "a": 27825,
+     "ex": "Undercast of the sales day book: add $420 to the control.<br>Omitted discount allowed: credit (deduct) $95.<br>$27,500 + $420 − $95 = <b>$27,825</b>.",
+     "topic": "Control account reconciliation",
+     "subtopic": "Control vs list adjustments",
+     "section": "REC",
+     "difficulty": "hard",
+     "source": "ai-generated"
+    },
+    {
+     "id": "REC52",
+     "t": "tf",
+     "q": "True or False: A casting (addition) error in a day book affects the relevant control account but does not affect the individual personal accounts, provided each invoice was posted separately and correctly.",
+     "opt": null,
+     "a": true,
+      "ex": "<b>True.</b> Personal accounts are posted invoice by invoice from the day-book lines. The control is posted from the day-book <b>total</b>. A casting error therefore hits the control only, which is why control-account reconciliations catch it.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Day-book casting errors",
+      "section": "REC",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC53",
+      "t": "mcq",
+      "q": "A bank statement shows a credit balance of $6,300. Unpresented cheques total $1,850 and lodgements not yet credited total $920. What is the cash book balance?",
+      "opt": [
+        "$5,370 credit",
+        "$5,370 debit",
+        "$7,230 credit",
+        "$7,230 debit"
+      ],
+      "a": 0,
+      "ex": "Statement credit $6,300 − unpresented cheques $1,850 + lodgements $920 = <b>$5,370 credit</b>. Working from statement to cash book: deduct unpresented (they're in CB but not statement), add lodgements (they're in CB but not statement).",
+      "topic": "Bank reconciliation",
+      "subtopic": "Timing differences calculation",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC54",
+      "t": "numeric",
+      "q": "The cash book shows a debit balance of $4,200 before adjustments. Bank charges of $65 appear on the statement but not in the cash book. Unpresented cheques total $780 and lodgements not yet credited total $340. What is the bank statement balance? $",
+      "opt": null,
+      "a": 4595,
+      "ex": "Adjusted cash book = $4,200 − $65 = $4,135.<br>Statement = Adjusted CB + unpresented $780 − lodgements $340 = $4,135 + $780 − $340 = <b>$4,595</b> credit.",
+      "topic": "Bank reconciliation",
+      "subtopic": "Reconstructing the statement",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC55",
+      "t": "mcq",
+      "q": "When reconciling a bank statement overdraft to the cash book, which item is DEDUCTED from the statement overdraft?",
+      "opt": [
+        "Unpresented cheques",
+        "Uncleared lodgements",
+        "Bank charges not in the cash book",
+        "Direct debits not in the cash book"
+      ],
+      "a": 0,
+      "ex": "When reconciling from an overdraft on the statement, <b>unpresented cheques are deducted</b> from the overdraft (they increase the overdraft when going from CB to statement, so reverse when going from statement to CB). Lodgements are added to an overdraft.",
+      "topic": "Bank reconciliation",
+      "subtopic": "Overdraft reconciliation",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC56",
+      "t": "numeric",
+      "q": "A supplier's statement shows $15,600 owed. The customer's payables ledger shows $13,800. A payment of $1,200 has been made by the customer but not yet recorded by the supplier. What is the value of invoices on the statement but not in the customer's ledger? $",
+      "opt": null,
+      "a": 600,
+      "ex": "Statement after payment: $15,600 − $1,200 = $14,400.<br>Customer ledger is $13,800.<br>Difference = $14,400 − $13,800 = <b>$600</b>. These must be invoices on the statement not yet in customer's ledger.",
+      "topic": "Supplier statement reconciliation",
+      "subtopic": "Finding missing items",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC57",
+      "t": "multi",
+      "q": "Which of the following are valid reasons why a supplier's statement balance may differ from the customer's payables ledger balance? Select ALL that apply.",
+      "opt": [
+        "Cash in transit (payment sent by customer but not received by supplier)",
+        "Goods in transit (invoiced by supplier but not yet received by customer)",
+        "Credit notes issued by supplier but not yet received by customer",
+        "A payment recorded by customer but misposted to wrong supplier's account"
+      ],
+      "a": [0, 1, 2],
+      "ex": "Cash in transit, goods in transit, and credit notes in transit are all timing differences that cause reconciliation differences. A misposting to the wrong supplier account is an error but affects personal accounts, not the control vs statement comparison directly.",
+      "topic": "Supplier statement reconciliation",
+      "subtopic": "Timing differences",
+      "section": "REC",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC58",
+      "t": "mcq",
+      "q": "In a receivables ledger control account, which of the following is a DEBIT entry?",
+      "opt": [
+        "Cash received from credit customers",
+        "Settlement discount allowed",
+        "Irrecoverable debt written off",
+        "Dishonoured cheque from a customer"
+      ],
+      "a": 3,
+      "ex": "A dishonoured cheque <b>reinstates</b> the receivable, so it is debited. Cash received, discounts allowed, and irrecoverable debts written off are all credit entries (reducing receivables).",
+      "topic": "Control account reconciliation",
+      "subtopic": "Receivables control entries",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC59",
+      "t": "numeric",
+      "q": "Receivables control account: opening debit $18,500; credit sales $124,600; cash received $118,900; discount allowed $1,450; irrecoverable debts $980; contra $1,800. What is the closing debit balance? $",
+      "opt": null,
+      "a": 19970,
+      "ex": "Debits: $18,500 + $124,600 = $143,100.<br>Credits: $118,900 + $1,450 + $980 + $1,800 = $123,130.<br>Closing debit = $143,100 − $123,130 = <b>$19,970</b>.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Receivables control reconstruction",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC60",
+      "t": "tf",
+      "q": "True or False: A debit balance on the bank statement (from the bank's perspective) means the customer has cash at bank.",
+      "opt": null,
+      "a": false,
+      "ex": "<b>False.</b> From the bank's perspective, a debit balance means the customer <b>owes money</b> to the bank (an overdraft). A credit balance on the statement means the bank owes money to the customer (cash at bank).",
+      "topic": "Bank reconciliation",
+      "subtopic": "Bank statement presentation",
+      "section": "REC",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC61",
+      "t": "mcq",
+      "q": "A cheque for $450 received from a customer was correctly recorded in the cash book but was later dishonoured. The customer is solvent. What entries are required?",
+      "opt": [
+        "Dr Bank $450, Cr Receivables $450",
+        "Dr Receivables $450, Cr Bank $450",
+        "Dr Irrecoverable debts $450, Cr Bank $450",
+        "Dr Bank $450, Cr Irrecoverable debts $450"
+      ],
+      "a": 1,
+      "ex": "A dishonoured cheque <b>reverses</b> the original receipt. The original entry was Dr Bank, Cr Receivables. To reverse: <b>Dr Receivables, Cr Bank</b>. This reinstates the debt from the customer.",
+      "topic": "Bank reconciliation",
+      "subtopic": "Dishonoured cheques",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC62",
+      "t": "numeric",
+      "q": "Payables control account: opening credit $12,400; purchases $78,500; payments to suppliers $72,800; discount received $1,240; purchase returns $1,850; contra with receivables $2,200. What is the closing credit balance? $",
+      "opt": null,
+      "a": 12810,
+      "ex": "Credits: $12,400 + $78,500 = $90,900.<br>Debits: $72,800 + $1,240 + $1,850 + $2,200 = $78,090.<br>Closing credit = $90,900 − $78,090 = <b>$12,810</b>.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Payables control reconstruction",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC63",
+      "t": "multi",
+      "q": "Which of the following are TRUE about control account reconciliations? Select ALL that apply.",
+      "opt": [
+        "The control account is in the general ledger",
+        "The control account should equal the total of the personal accounts in the memorandum ledger",
+        "Casting errors in day books affect the control account but not the personal accounts",
+        "A contra between receivables and payables is recorded by debiting receivables and crediting payables"
+      ],
+      "a": [0, 1, 2],
+      "ex": "The control account is in the general ledger and should equal the total of personal accounts. Casting errors in day books affect the control (posted from totals) but not personal accounts (posted individually). A contra is <b>debit payables, credit receivables</b> — both balances decrease.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Control account fundamentals",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC64",
+      "t": "mcq",
+      "q": "A payment of $500 was correctly recorded in the cash book and on the supplier's statement. However, the supplier has recorded the payment twice. In the supplier statement reconciliation, how is this treated?",
+      "opt": [
+        "Add $500 to the supplier's statement",
+        "Deduct $500 from the supplier's statement",
+        "Add $500 to the customer's payables ledger",
+        "No adjustment needed"
+      ],
+      "a": 1,
+      "ex": "The supplier's statement is <b>$500 too low</b> because the payment is recorded twice. To reconcile, <b>deduct $500</b> from the statement (or add $500 when comparing to customer ledger) to remove the duplicate.",
+      "topic": "Supplier statement reconciliation",
+      "subtopic": "Supplier errors",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC65",
+      "t": "numeric",
+      "q": "The bank statement shows an overdraft of $2,850. Unpresented cheques are $1,640. Lodgements not yet credited are $720. Bank charges of $85 are on the statement but not in the cash book. What is the adjusted cash book overdraft reported in SOFP? $",
+      "opt": null,
+      "a": 3770,
+      "ex": "Statement OD $2,850 + unpresented $1,640 − lodgements $720 = $3,770.<br>Bank charges are already on the statement, so adjusted CB OD = <b>$3,770</b>.",
+      "topic": "Bank reconciliation",
+      "subtopic": "SOFP cash figure",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC66",
+      "t": "tf",
+      "q": "True or False: When preparing a bank reconciliation, bank errors should be corrected by making an entry in the cash book.",
+      "opt": null,
+      "a": false,
+      "ex": "<b>False.</b> Bank errors are the bank's mistake, not the entity's. They are adjusted on the <b>statement side</b> of the reconciliation, but no entry is made in the cash book. The entity should notify the bank to correct its records.",
+      "topic": "Bank reconciliation",
+      "subtopic": "Bank errors treatment",
+      "section": "REC",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC67",
+      "t": "mcq",
+      "q": "The total of the list of receivables balances is $42,300. A credit balance of $350 on a customer's account has been treated as a debit balance in the list. What is the correct total of the list?",
+      "opt": [
+        "$41,600",
+        "$41,950",
+        "$42,650",
+        "$43,000"
+      ],
+      "a": 0,
+      "ex": "The $350 was added as a debit but should have been deducted (it's a credit balance). Correction: $42,300 − $350 − $350 = <b>$41,600</b> (deduct twice: once to remove the wrong debit, once to record the credit correctly).",
+      "topic": "Control account reconciliation",
+      "subtopic": "Credit balances in list",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC68",
+      "t": "numeric",
+      "q": "A supplier statement shows $9,200. The customer's payables ledger shows $8,100. A payment of $700 is in transit. An invoice of $280 is on the statement but not in the customer's ledger. After adjusting for these items, what is the unreconciled difference? $",
+      "opt": null,
+      "a": 120,
+      "ex": "Statement after payment: $9,200 − $700 = $8,500.<br>Customer ledger after invoice: $8,100 + $280 = $8,380.<br>Unreconciled difference = $8,500 − $8,380 = <b>$120</b>.",
+      "topic": "Supplier statement reconciliation",
+      "subtopic": "Unreconciled difference",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC69",
+      "t": "mcq",
+      "q": "Discount allowed of $180 was posted to the debit of the receivables control account instead of the credit. What is the effect on the control account balance?",
+      "opt": [
+        "Overstated by $180",
+        "Understated by $180",
+        "Overstated by $360",
+        "Understated by $360"
+      ],
+      "a": 2,
+      "ex": "The $180 was debited but should have been credited. The error overstates receivables by <b>$360</b> (double the amount: wrong side). Correct by crediting $360.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Wrong-side postings",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC70",
+      "t": "multi",
+      "q": "Which of the following would result in a CREDIT entry in the receivables ledger control account? Select ALL that apply.",
+      "opt": [
+        "Credit sales",
+        "Cash received from credit customers",
+        "Irrecoverable debts written off",
+        "Sales returns",
+        "Dishonoured cheques"
+      ],
+      "a": [1, 2, 3],
+      "ex": "Credit sales and dishonoured cheques are DEBITS (increasing receivables). Cash received, irrecoverable debts written off, and sales returns are all CREDITS (reducing receivables).",
+      "topic": "Control account reconciliation",
+      "subtopic": "Receivables control entries",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC71",
+      "t": "numeric",
+      "q": "Cash book shows $3,800 debit. Bank statement shows $4,650 credit. Unpresented cheques are $1,150. Bank interest received of $50 is on the statement but not in the cash book. What is the value of lodgements not yet credited? $",
+      "opt": null,
+      "a": 350,
+      "ex": "Adjusted cash book = $3,800 + $50 = $3,850.<br>Statement to CB: $4,650 − $1,150 + lodgements = $3,850.<br>Lodgements = $3,850 − $4,650 + $1,150 = <b>$350</b>.",
+      "topic": "Bank reconciliation",
+      "subtopic": "Finding lodgements",
+      "section": "REC",
+      "difficulty": "hard",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC72",
+      "t": "mcq",
+      "q": "A business has an overdraft. The bank statement shows a debit balance of $3,500. The cash book shows a credit balance of $2,900. Unpresented cheques are $800. What is the value of lodgements not yet credited?",
+      "opt": [
+        "$200",
+        "$400",
+        "$600",
+        "$1,400"
+      ],
+      "a": 0,
+      "ex": "Statement OD $3,500 (debit = overdraft from bank's view). CB OD $2,900 (credit = overdraft from entity's view).<br>Working from statement to CB: $3,500 − $800 + lodgements = $2,900.<br>Lodgements = $2,900 − $3,500 + $800 = <b>$200</b>.",
+      "topic": "Bank reconciliation",
+      "subtopic": "Overdraft reconciliation",
+      "section": "REC",
+      "difficulty": "hard",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC73",
+      "t": "tf",
+      "q": "True or False: The receivables ledger control account and the individual customer accounts together form a self-balancing system.",
+      "opt": null,
+      "a": true,
+      "ex": "<b>True.</b> The control account is in the general ledger, and the individual customer accounts are in the memorandum sales ledger. Together they form a self-balancing system: the control account total should equal the sum of personal account balances.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Self-balancing system",
+      "section": "REC",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC74",
+      "t": "numeric",
+      "q": "Receivables control account balance $35,600 debit. Sales day book overcast by $420. Discount allowed of $180 posted to debit of control instead of credit. Cash of $250 from a customer posted to debit of control instead of credit. What is the corrected balance? $",
+      "opt": null,
+      "a": 34320,
+      "ex": "Day book overcast: deduct $420.<br>Discount wrong side: deduct $360 (should credit $180, debited $180).<br>Cash wrong side: deduct $500 (should credit $250, debited $250).<br>$35,600 − $420 − $360 − $500 = <b>$34,320</b>.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Multiple errors",
+      "section": "REC",
+      "difficulty": "hard",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC75",
+      "t": "mcq",
+      "q": "A supplier's statement is received showing an amount owed. The customer has records that differ from this amount. What is the FIRST step in reconciling?",
+      "opt": [
+        "Assume the supplier is correct and adjust the customer's records",
+        "Compare the statement line by line with the customer's payables ledger account",
+        "Write to the supplier asking for an explanation",
+        "Ignore the difference as it will correct itself next month"
+      ],
+      "a": 1,
+      "ex": "The first step is to <b>compare</b> the statement line by line with the customer's own records. This identifies timing differences (cash in transit, goods in transit) and errors. Only then should adjustments or queries be made.",
+      "topic": "Supplier statement reconciliation",
+      "subtopic": "Reconciliation procedure",
+      "section": "REC",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC76",
+      "t": "multi",
+      "q": "Which of the following affect the PAYABLES LEDGER CONTROL ACCOUNT? Select ALL that apply.",
+      "opt": [
+        "Credit purchases posted from purchase day book total",
+        "Settlement discount received",
+        "A supplier invoice posted to the wrong supplier's personal account",
+        "Purchase returns",
+        "Contra with receivables ledger"
+      ],
+      "a": [0, 1, 3, 4],
+      "ex": "Credit purchases (from day book total), discounts received, purchase returns, and contras all affect the control account. An invoice posted to the wrong supplier's personal account (error of commission) does not affect the control total.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Payables control entries",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC77",
+      "t": "numeric",
+      "q": "A business's cash book showed $5,400 debit at the start of the month. During the month: receipts $32,600, payments $35,200, dishonoured cheques $320, bank charges $85. What is the closing balance per the cash book? $ (enter positive for debit/asset, negative for credit/overdraft)",
+      "opt": null,
+      "a": 3035,
+      "ex": "$5,400 + $32,600 + $320 − $35,200 − $85 = <b>$3,035</b> debit. Dishonoured cheques are debited to bank (reinstating the receivable), charges are credited to bank.",
+      "topic": "Bank reconciliation",
+      "subtopic": "Updating the cash book",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC78",
+      "t": "tf",
+      "q": "True or False: A supplier statement reconciliation is primarily used to verify that the supplier has correctly recorded all transactions.",
+      "opt": null,
+      "a": false,
+      "ex": "<b>False.</b> The primary purpose is to verify that the <b>customer's</b> own records are complete and accurate. Differences may reveal items the customer has not recorded (invoices, credit notes, payments). The statement is external evidence, not the focus of verification.",
+      "topic": "Supplier statement reconciliation",
+      "subtopic": "Purpose of reconciliation",
+      "section": "REC",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC79",
+      "t": "mcq",
+      "q": "The receivables control account does not agree with the total of the list of balances. Which of the following errors would NOT cause a difference?",
+      "opt": [
+        "Sales day book was undercast",
+        "An invoice was omitted from the sales day book entirely",
+        "Cash received was posted to the wrong customer's account",
+        "Discount allowed was omitted from the control account"
+      ],
+      "a": 2,
+      "ex": "Posting cash to the <b>wrong customer's account</b> is an error of commission. The total of all customer balances is unchanged, so the control account and the list still agree. The other errors all cause a difference between control and list total.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Errors that do not cause disagreement",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC80",
+      "t": "numeric",
+      "q": "Bank statement shows overdraft of $5,200. Unpresented cheques $1,890. Lodgements not credited $1,240. Bank has received a dividend of $150 direct to the bank (not in cash book). What adjusted cash book overdraft should be reported in SOFP? $",
+      "opt": null,
+      "a": 5850,
+      "ex": "Statement OD $5,200 + unpresented $1,890 − lodgements $1,240 = <b>$5,850</b> overdraft. Dividend is already in statement.",
+      "topic": "Bank reconciliation",
+      "subtopic": "SOFP cash figure",
+      "section": "REC",
+      "difficulty": "hard",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC81",
+      "t": "manual",
+      "q": "Explain the difference between timing differences and unrecorded differences in a bank reconciliation. Give two examples of each and state how each type is treated.",
+      "opt": null,
+      "a": null,
+      "ex": "<b>Timing differences</b> are items already in the cash book but not yet on the bank statement: unpresented cheques and uncleared lodgements. They are adjusted on the <b>statement side</b> of the reconciliation, with no cash book entry.<br><b>Unrecorded differences</b> are items the business learns of from the bank statement: bank charges, interest, standing orders, direct debits, dishonoured cheques. They are <b>entered in the cash book</b> (journalised) before the reconciliation is completed.",
+      "topic": "Bank reconciliation",
+      "subtopic": "Timing vs unrecorded differences",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC82",
+      "t": "mcq",
+      "q": "Which of the following correctly describes the treatment of an unpresented cheque in a bank reconciliation?",
+      "opt": [
+        "Add to the bank statement balance when reconciling to a credit cash book balance",
+        "Deduct from the bank statement balance when reconciling to a credit cash book balance",
+        "Debit the cash book and credit payables",
+        "Enter as an unrecorded difference in the cash book"
+      ],
+      "a": 0,
+      "ex": "An unpresented cheque has been <b>credited in the cash book</b> but not yet debited by the bank. When reconciling from a favourable (credit) statement to the cash book, <b>add unpresented cheques</b> to the statement balance. They are timing differences, not cash book entries.",
+      "topic": "Bank reconciliation",
+      "subtopic": "Unpresented cheques treatment",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC83",
+      "t": "numeric",
+      "q": "Payables control: opening credit $9,800; purchases $62,400; payments $58,600; discount received $1,150; returns $2,100; contra $1,800; refund from supplier $220. What is the closing credit balance? $",
+      "opt": null,
+      "a": 8770,
+      "ex": "Credits: $9,800 + $62,400 + $220 = $72,420.<br>Debits: $58,600 + $1,150 + $2,100 + $1,800 = $63,650.<br>Closing credit = $72,420 − $63,650 = <b>$8,770</b>.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Payables control reconstruction",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC84",
+      "t": "multi",
+      "q": "Which of the following would be DEBITED in the payables ledger control account? Select ALL that apply.",
+      "opt": [
+        "Credit purchases",
+        "Payments to suppliers",
+        "Settlement discount received",
+        "Purchase returns",
+        "Contra with receivables ledger"
+      ],
+      "a": [1, 2, 3, 4],
+      "ex": "All of these <b>reduce</b> payables and are debits: payments, discounts received, returns, and contras. Credit purchases is the only item that <b>increases</b> payables (credit entry).",
+      "topic": "Control account reconciliation",
+      "subtopic": "Payables control entries",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC85",
+      "t": "mcq",
+      "q": "A customer's statement shows they owe $4,500. The supplier's receivables ledger shows $4,200 for that customer. A credit note of $300 was issued by the supplier but not yet recorded by the customer. What was the original balance on the customer's statement before the credit note adjustment?",
+      "opt": [
+        "$4,200",
+        "$4,500",
+        "$4,800",
+        "$5,100"
+      ],
+      "a": 2,
+      "ex": "After the credit note is recorded by the customer: $4,500 − $300 = $4,200, which matches the supplier's ledger. Original statement was $4,200 + $300 = <b>$4,800</b>.",
+      "topic": "Supplier statement reconciliation",
+      "subtopic": "Credit notes in transit",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC86",
+      "t": "numeric",
+      "q": "Receivables control $28,400 debit. List of balances $27,850. Discount allowed $150 was omitted from control. A debt of $480 was written off in control but not in list. What is the unreconciled difference after these adjustments? $",
+      "opt": null,
+      "a": 880,
+      "ex": "Control after discount: $28,400 − $150 = $28,250.<br>List after write-off: $27,850 − $480 = $27,370.<br>Difference: $28,250 − $27,370 = <b>$880</b>.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Unreconciled difference",
+      "section": "REC",
+      "difficulty": "hard",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC87",
+      "t": "tf",
+      "q": "True or False: A credit balance in the payables ledger control account represents an amount owed by the business to its suppliers.",
+      "opt": null,
+      "a": true,
+      "ex": "<b>True.</b> The payables control account normally has a credit balance, representing the total amount the business owes to its credit suppliers. A debit balance would be unusual and might indicate an overpayment or return exceeding the balance owed.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Normal balance",
+      "section": "REC",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC88",
+      "t": "mcq",
+      "q": "A bank reconciliation shows that the adjusted cash book balance is $6,850 debit, but the bank statement shows $7,600 credit. What must be true?",
+      "opt": [
+        "Unpresented cheques exceed lodgements by $750",
+        "Lodgements exceed unpresented cheques by $750",
+        "There is a bank error of $750",
+        "The cash book has been adjusted incorrectly"
+      ],
+      "a": 0,
+      "ex": "Statement $7,600 (credit) vs CB $6,850 (debit). The difference is $750. Statement is HIGHER than CB, meaning unpresented cheques (which reduce statement when going to CB) exceed lodgements (which increase statement when going to CB). Unpresented − lodgements = $750.",
+      "topic": "Bank reconciliation",
+      "subtopic": "Timing differences analysis",
+      "section": "REC",
+      "difficulty": "hard",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC89",
+      "t": "numeric",
+      "q": "The sales day book total was $48,600. It was later discovered that a sales invoice for $720 had been recorded twice in the day book. What is the correct posting to the receivables control account? $ (enter the correct debit amount)",
+      "opt": null,
+      "a": 47880,
+      "ex": "Day book total $48,600 includes the duplicate $720. Correct total = $48,600 − $720 = <b>$47,880</b>. This is the amount to debit the receivables control account.",
+      "topic": "Control account reconciliation",
+      "subtopic": "Day book errors",
+      "section": "REC",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "REC90",
+      "t": "mcq",
+      "q": "Which of the following statements about bank reconciliations is correct?",
+      "opt": [
+        "Bank errors are corrected by adjusting the cash book",
+        "The adjusted cash book balance is the figure reported in the statement of financial position",
+        "Unpresented cheques are added to the cash book balance when reconciling",
+        "Outstanding lodgements are deducted from the bank statement balance"
+      ],
+      "a": 1,
+      "ex": "The <b>adjusted cash book balance</b> (after recording unrecorded differences) is reported in the SOFP. Bank errors are adjusted on the statement side only. Unpresented cheques are deducted from a favourable statement, not added to CB. Lodgements are added to a favourable statement.",
+      "topic": "Bank reconciliation",
+      "subtopic": "SOFP cash figure",
+      "section": "REC",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     }
+    ]
+   },
+   "CFS": {
+    "code": "CFS",
+    "name": "Cash Flow Statements",
+    "uz": "Pul oqimi hisoboti",
+    "questions": [
+     {
+      "id": "CFS01",
+      "t": "mcq",
+      "q": "What is the primary purpose of a statement of cash flows?",
+      "opt": [
+       "To show the profit or loss for the period",
+       "To show the financial position at a point in time",
+       "To show the cash inflows and outflows during the period",
+       "To show the changes in equity during the period"
+      ],
+      "a": 2,
+      "ex": "The statement of cash flows shows <b>cash inflows and outflows</b> classified into operating, investing, and financing activities. It does not show profit (that's the SPL), financial position (SOFP), or changes in equity.",
+      "topic": "Cash Flow Statements",
+      "subtopic": "Purpose of CFS",
+      "section": "CFS",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "CFS02",
+      "t": "mcq",
+      "q": "Under IAS 7, which of the following is classified as an operating activity?",
+      "opt": [
+       "Purchase of property, plant and equipment",
+       "Proceeds from issuing shares",
+       "Cash received from customers",
+       "Repayment of a bank loan"
+      ],
+      "a": 2,
+      "ex": "Cash received from customers is an <b>operating activity</b> — it relates to the principal revenue-producing activities. PPE purchases are investing, share issues and loan repayments are financing.",
+      "topic": "Cash Flow Statements",
+      "subtopic": "Classification of cash flows",
+      "section": "CFS",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "CFS03",
+      "t": "multi",
+      "q": "Which of the following are classified as INVESTING activities under IAS 7? Select ALL that apply.",
+      "opt": [
+       "Purchase of machinery",
+       "Proceeds from sale of equipment",
+       "Interest received",
+       "Acquisition of a subsidiary",
+       "Dividends paid"
+      ],
+      "a": [0, 1, 3],
+      "ex": "Purchase of machinery, proceeds from sale of equipment, and acquisition of a subsidiary are all <b>investing activities</b>. Interest received can be operating or investing. Dividends paid is a financing activity.",
+      "topic": "Cash Flow Statements",
+      "subtopic": "Investing activities",
+      "section": "CFS",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "CFS04",
+      "t": "mcq",
+      "q": "Which method starts with profit before tax and adjusts for non-cash items to arrive at cash from operating activities?",
+      "opt": [
+       "Direct method",
+       "Indirect method",
+       "Working capital method",
+       "Balance sheet method"
+      ],
+      "a": 1,
+      "ex": "The <b>indirect method</b> starts with profit before tax and adds back non-cash items (depreciation, impairment) and adjusts for changes in working capital. The direct method shows major classes of gross cash receipts and payments.",
+      "topic": "Cash Flow Statements",
+      "subtopic": "Indirect method",
+      "section": "CFS",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "CFS05",
+      "t": "numeric",
+      "q": "Profit before tax is $85,000. Depreciation for the year is $12,000. Increase in inventory is $8,000. Decrease in trade payables is $5,000. What is the cash generated from operations? $",
+      "opt": null,
+      "a": 84000,
+      "ex": "Profit $85,000 + depreciation $12,000 − increase in inventory $8,000 − decrease in payables $5,000 = <b>$84,000</b>.",
+      "topic": "Cash Flow Statements",
+      "subtopic": "Indirect method calculation",
+      "section": "CFS",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "CFS06",
+      "t": "tf",
+      "q": "True or False: Interest paid is always classified as a financing activity under IAS 7.",
+      "opt": null,
+      "a": false,
+      "ex": "<b>False.</b> Interest paid can be classified as either <b>operating</b> or <b>financing</b> under IAS 7. Most entities classify it as operating because it is included in profit. Dividends paid is normally financing.",
+      "topic": "Cash Flow Statements",
+      "subtopic": "Interest and dividends classification",
+      "section": "CFS",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "CFS07",
+      "t": "mcq",
+      "q": "A company sold equipment for $15,000 cash. The equipment had a carrying amount of $12,000. How is this reported in the statement of cash flows?",
+      "opt": [
+       "Operating inflow $15,000",
+       "Operating inflow $15,000 and deduct $3,000 from profit in operating activities",
+       "Investing inflow $15,000",
+       "Investing inflow $15,000 and add back loss of $3,000 to profit in operating activities"
+      ],
+      "a": 2,
+      "ex": "The entire $15,000 cash received is an <b>investing inflow</b>. The $3,000 gain on disposal is included in profit and should be <b>deducted</b> from profit in operating activities under the indirect method, not added back.",
+      "topic": "Cash Flow Statements",
+      "subtopic": "Disposal of non-current assets",
+      "section": "CFS",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "CFS08",
+      "t": "numeric",
+      "q": "Revenue for the year is $320,000. Trade receivables at the start of the year were $28,000 and at the end of the year were $35,000. Cash received from customers under the direct method is: $",
+      "opt": null,
+      "a": 313000,
+      "ex": "Revenue $320,000 + opening receivables $28,000 − closing receivables $35,000 = <b>$313,000</b>.",
+      "topic": "Cash Flow Statements",
+      "subtopic": "Direct method calculation",
+      "section": "CFS",
+      "difficulty": "medium",
+      "source": "ai-generated"
+     },
+     {
+      "id": "CFS09",
+      "t": "mcq",
+      "q": "Under the indirect method, an increase in trade receivables during the year is:",
+      "opt": [
+       "Added to profit",
+       "Deducted from profit",
+       "Ignored — it does not affect cash",
+       "Shown as a financing outflow"
+      ],
+      "a": 1,
+      "ex": "An increase in trade receivables means sales have been recognised but cash has not yet been received. It is therefore <b>deducted from profit</b> to arrive at cash from operations.",
+      "topic": "Cash Flow Statements",
+      "subtopic": "Working capital adjustments",
+      "section": "CFS",
+      "difficulty": "easy",
+      "source": "ai-generated"
+     },
+     {
+      "id": "CFS10",
+      "t": "numeric",
+      "q": "Profit before tax $120,000. Depreciation $18,000. Loss on disposal of equipment $4,000. Increase in receivables $12,000. Decrease in payables $7,000. Interest paid $6,000 (treated as operating). Tax paid $15,000. What is net cash from operating activities? $",
+      "opt": null,
+      "a": 102000,
+      "ex": "Profit $120,000 + depreciation $18,000 + loss on disposal $4,000 − increase in receivables $12,000 − decrease in payables $7,000 − interest paid $6,000 = cash generated from operations $117,000. Tax paid $15,000. Net cash from operating = $117,000 − $15,000 = <b>$102,000</b>.",
+      "topic": "Cash Flow Statements",
+      "subtopic": "Full indirect method",
+      "section": "CFS",
+      "difficulty": "hard",
+      "source": "ai-generated"
+     }
+    ]
+   }
   }
- }
 }

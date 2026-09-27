@@ -15,7 +15,7 @@ import { Moon, Sun, Monitor, Target, Brain, Zap, RotateCcw, Save, Loader2, Check
 import type { SectionCode } from "@/types";
 import { getAIConfig, setAIConfig, checkAIHealth } from "@/lib/ai-client";
 
-const SECTIONS: SectionCode[] = ["DE", "INV", "NCA", "INT", "TAX", "ACC", "RPP", "CAP"];
+const SECTIONS: SectionCode[] = ["DE", "INV", "NCA", "INT", "TAX", "ACC", "RPP", "CAP", "REC", "CFS"];
 const SECTION_LABELS: Record<string, string> = {
   DE: "Double Entry",
   INV: "Inventory",
@@ -25,6 +25,7 @@ const SECTION_LABELS: Record<string, string> = {
   ACC: "Accruals & Prepayments",
   RPP: "Reporting & Performance",
   CAP: "Capital & Financing",
+  REC: "Reconciliations",
 };
 
 function Toggle({
@@ -92,8 +93,8 @@ export function SettingsView() {
   const handleExamWeights = () => {
     // ACCA FA syllabus approximate weights
     const examWeights: Record<SectionCode, number> = {
-      DE: 20, INV: 15, NCA: 15, INT: 10,
-      TAX: 10, ACC: 10, RPP: 10, CAP: 10,
+      DE: 16, INV: 14, NCA: 14, INT: 8,
+      TAX: 8, ACC: 10, RPP: 10, CAP: 10, REC: 10, CFS: 0,
     };
     setLocalWeights(examWeights);
   };

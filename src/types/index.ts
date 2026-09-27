@@ -5,7 +5,7 @@
 
 // ============================= Core Domain Types =============================
 
-export type SectionCode = 'DE' | 'INV' | 'NCA' | 'INT' | 'TAX' | 'ACC' | 'RPP' | 'CAP';
+export type SectionCode = 'DE' | 'INV' | 'NCA' | 'INT' | 'TAX' | 'ACC' | 'RPP' | 'CAP' | 'REC' | 'CFS';
 export type QuestionType = 'mcq' | 'multi' | 'tf' | 'numeric' | 'manual' | 'fs';
 export type Difficulty = 'easy' | 'medium' | 'hard';
 export type ConfidenceLevel = 'low' | 'medium' | 'high';
@@ -20,17 +20,19 @@ export interface SectionMeta {
 }
 
 export const SECTIONS: Record<SectionCode, SectionMeta> = {
-  DE: { code: 'DE', name: 'Double Entry & Accounting Systems', uz: 'Ikki tomonlama yozuv va hisob tizimlari', weight: 20 },
-  INV: { code: 'INV', name: 'Inventory', uz: 'Tovar-moddiy zaxiralar', weight: 15 },
-  NCA: { code: 'NCA', name: 'Non-Current Assets', uz: 'Uzoq muddatli aktivlar', weight: 15 },
-  INT: { code: 'INT', name: 'Intangibles & R&D', uz: 'Nomoddiy aktivlar va tadqiqot-ishlanmalar', weight: 10 },
-  TAX: { code: 'TAX', name: 'Taxation', uz: 'Soliqlar', weight: 10 },
+  DE: { code: 'DE', name: 'Double Entry & Accounting Systems', uz: 'Ikki tomonlama yozuv va hisob tizimlari', weight: 16 },
+  INV: { code: 'INV', name: 'Inventory', uz: 'Tovar-moddiy zaxiralar', weight: 14 },
+  NCA: { code: 'NCA', name: 'Non-Current Assets', uz: 'Uzoq muddatli aktivlar', weight: 14 },
+  INT: { code: 'INT', name: 'Intangibles & R&D', uz: 'Nomoddiy aktivlar va tadqiqot-ishlanmalar', weight: 8 },
+  TAX: { code: 'TAX', name: 'Taxation', uz: 'Soliqlar', weight: 8 },
   ACC: { code: 'ACC', name: 'Accruals & Prepayments', uz: 'Hisoblangan xarajatlar va oldindan to\'lovlar', weight: 10 },
   RPP: { code: 'RPP', name: 'Receivables, Payables & Provisions', uz: 'Debitorlik, kreditorlik va zaxiralar', weight: 10 },
   CAP: { code: 'CAP', name: 'Capital Structure & Finance Costs', uz: 'Kapital tuzilmasi va moliyaviy xarajatlar', weight: 10 },
+  REC: { code: 'REC', name: 'Reconciliations', uz: 'Solishtirish (bank, ta\'minotchi, control hisoblar)', weight: 10 },
+  CFS: { code: 'CFS', name: 'Cash Flow Statements', uz: 'Pul oqimi hisoboti', weight: 10 },
 };
 
-export const SECTION_ORDER: SectionCode[] = ['DE', 'INV', 'NCA', 'INT', 'TAX', 'ACC', 'RPP', 'CAP'];
+export const SECTION_ORDER: SectionCode[] = ['DE', 'INV', 'NCA', 'INT', 'TAX', 'ACC', 'RPP', 'CAP', 'REC', 'CFS'];
 
 // ============================= Question Types =============================
 

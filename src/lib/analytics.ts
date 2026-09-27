@@ -83,6 +83,8 @@ export function computeHeatmapData(
     ACC: new Set(),
     RPP: new Set(),
     CAP: new Set(),
+    REC: new Set(),
+    CFS: new Set(),
   };
 
   questions.forEach((q) => {

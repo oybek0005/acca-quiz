@@ -41,14 +41,16 @@ export interface SettingsState {
 }
 
 const DEFAULT_WEIGHTS: Record<SectionCode, number> = {
-  DE: 20,
-  INV: 15,
-  NCA: 15,
-  INT: 10,
-  TAX: 10,
+  DE: 16,
+  INV: 14,
+  NCA: 14,
+  INT: 8,
+  TAX: 8,
   ACC: 10,
   RPP: 10,
   CAP: 10,
+  REC: 10,
+  CFS: 0,
 };
 
 const DEFAULT_SETTINGS: Omit<SettingsState, keyof Pick<SettingsState, 'setTheme' | 'setQuizMode' | 'setShowTimer' | 'setRequireConfidence' | 'setDailyTarget' | 'setSoundEnabled' | 'setAnimationsEnabled' | 'setSectionWeights' | 'reset'>> = {
@@ -330,13 +332,15 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
     ACC: [],
     RPP: [],
     CAP: [],
+    REC: [],
+    CFS: [],
   },
   isLoaded: false,
 
   loadQuestions: (bank) => {
     const questions = normalizeQuestions(bank as Array<Partial<Question>>);
     const bySection: QuestionsState['questionBank'] = {
-      DE: [], INV: [], NCA: [], INT: [], TAX: [], ACC: [], RPP: [], CAP: [],
+      DE: [], INV: [], NCA: [], INT: [], TAX: [], ACC: [], RPP: [], CAP: [], REC: [], CFS: [],
     };
     questions.forEach((q) => {
       if (bySection[q.section]) bySection[q.section].push(q);
@@ -386,6 +390,8 @@ export function getWeightedRandomQuestions(
     ACC: [],
     RPP: [],
     CAP: [],
+    REC: [],
+    CFS: [],
   };
 
   questions.forEach((q) => {

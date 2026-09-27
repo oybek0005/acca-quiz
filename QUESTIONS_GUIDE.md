@@ -15,7 +15,7 @@ Fayl tuzilishi:
 }
 ```
 
-Bo'lim kodlari: `DE, INV, NCA, INT, TAX, ACC, RPP, CAP`.
+Bo'lim kodlari: `DE, INV, NCA, INT, TAX, ACC, RPP, CAP, REC`.
 Ilova yuklaganda har bir savolga `section` avtomatik qo'shiladi (bo'lim kalitidan), agar `difficulty` yo'q bo'lsa taxminan hisoblanadi. Lekin **har doim to'liq yozing**.
 
 ---
