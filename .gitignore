@@ -51,3 +51,6 @@ next-env.d.ts
 screenshot-*.png
 test-*.js
 fix_dashboard.py
+
+# Local Netlify folder
+.netlify
