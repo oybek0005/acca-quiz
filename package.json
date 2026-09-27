@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "serve": "npx --yes serve out -l 4000",
-    "deploy": "npm run build && bash deploy/deploy.sh",
+    "deploy": "netlify deploy --prod",
     "lint": "eslint",
     "typecheck": "tsc --noEmit"
   },
